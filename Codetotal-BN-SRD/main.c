@@ -16,6 +16,11 @@ int main() {
     scanf("%d", &choixhelp);
 
     switch (choixhelp) {
+        default:
+            while (choixhelp) {
+                printf("Eh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même… ");
+                scanf("%d", &choixhelp);
+            }
         case 0:
             printf("« Parfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
         case 1:
@@ -45,7 +50,7 @@ int main() {
                    "\n"
                    "Une fois que vous avez touché les 3 bateaux, un message s’affiche vous annonçant que vous avez gagné.");
 
-        default: printf("Eh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même…");
+
     }
 
     return 0;
