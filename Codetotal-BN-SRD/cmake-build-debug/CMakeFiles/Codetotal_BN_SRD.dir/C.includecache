@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Samuel/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/main.c
+stdio.h
+-
+
