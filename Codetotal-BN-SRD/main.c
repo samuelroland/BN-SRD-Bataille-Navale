@@ -4,17 +4,7 @@
 #define DIMENSIONSTABLEAU 8 //dimensions du tableaux: 8*8 cases.
 
 //TOUS LES SYMBOLES SPéCIAUX:
-#define STLC 218 // ┌, Single Top Left Corner
-#define STRC 191 // ┐, Single Top Right Corner
-#define SBLC 192 // └, Single Bottom Left Corner
-#define SBRC 217 // ┘, Single Bottom Right Corner
-#define SVSB 179 // │, Single Vertical Simple Border
-#define SVRB 180 // ┤, Single Vertical Right Border
-#define SVLB 195 // ├, Single Vertical Left Border
-#define SHSB 196 // ─, Single Horizontal Simple Border
-#define SHBB 193 // ┴, Single Horizontal Bottom Border
-#define SHTB 194 // ┬, Single Horizontal Top Border
-#define SC   197 // ┼, Single Center
+//TABLEAU DOUBLE-BANDE:
 #define DTLC 201 // ╔, Double Top Left Corner
 #define DTRC 187 // ╗, Double Top Right Corner
 #define DBLC 200 // ╚, Double Bottom Left Corner
@@ -28,13 +18,12 @@
 #define DC   206 // ╬, Double Center
 
 
-//Fonction affichage de la grille:
 //Sous-fonctions pour la grille:
 void traits3horiz() {
     printf("%c%c%c", DHSB, DHSB, DHSB);
 }
 
-
+//Lignes début et fin:
 void lignesuperieurgrille() {
     printf("%c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
@@ -44,12 +33,18 @@ void lignesuperieurgrille() {
     traits3horiz();
     printf("%c\n", DTRC);
 }
-
-void grilleinferieur(){
-
+void ligneinferieurgrille() {
+    printf("%c", DBLC);
+    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╩
+        traits3horiz();
+        printf("%c", DHBB);
+    }
+    traits3horiz();
+    printf("%c\n", DBRC);
 }
 
 
+//Lignes entre deux:
 void lignedonneegrille() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
@@ -68,7 +63,6 @@ void lignedonneegrille() {
     printf(" %c\n", DVSB);
 
 }
-
 void lignemilieugrille() {
     printf("%c", DVLB);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
@@ -79,7 +73,7 @@ void lignemilieugrille() {
     printf("%c\n", DVRB);
 }
 
-
+//Fonction affichage de la grille:
 void Affgrille() {
 
     lignesuperieurgrille();
@@ -87,8 +81,8 @@ void Affgrille() {
         lignedonneegrille();
         lignemilieugrille();
     }
-    lignedonneegrille();    //c'est la derniere.
-    grilleinferieur();
+    lignedonneegrille();    //c'est la derniere ligne de donnée.
+    ligneinferieurgrille();
 
 
 }
