@@ -23,18 +23,17 @@ int main() {
 
     switch (choixhelp) {
         case 0:
-            printf("Parfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
+            printf("\n\nParfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
         case 1:
             //Afficher la grille:
             Affgrille();
             //Afficher l'aide:
-            printf("Vous êtes sur un jeu de bataille navale.\n"
+            printf("\n\nVous êtes sur un jeu de bataille navale.\n"
                    "Voici les règles du jeu :\n"
                    "Le but : Couler tous les bateaux adverses placés quelque part en mer (sur le plateau de jeu de 64 cases), avec des explosifs.\n"
                    "Il y a trois bateaux : de 2, 3, et 4 cases de long par défaut. Les bateaux ne sont pas l’un à côté de l’autre.\n"
-                   "Pour essayer de toucher les bateaux, vous devez entrez \n"
-                   "la coordonnée de la case où vous voulez lancer un explosif (exemple, A5), puis tapez enter.\n"
+                   "Pour essayer de toucher les bateaux, vous devez entrez la coordonnée de la case où vous voulez lancer un explosif (exemple, A5), puis tapez enter.\n"
                    "\n"
                    "Si le programme affiche « A l’eau », vous n’avez pas touché de bateau, une croix s’affiche dans la case. \n"
                    "\n"
