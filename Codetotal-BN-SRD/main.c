@@ -34,6 +34,7 @@ void traits3horiz() {
     printf("%c%c%c", DHSB, DHSB, DHSB);
 }
 
+
 void lignesuperieurgrille() {
     printf("%c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
@@ -44,16 +45,22 @@ void lignesuperieurgrille() {
     printf("%c\n", DTRC);
 }
 
-void lignedonneegrille(){
+void grilleinferieur(){
+
+}
+
+
+void lignedonneegrille() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
     printf("%c ", DVSB);    // ca fera ca ║
 
 
-    //Symbole selon donnée du tableau:
-    //.................. * pour test slt:
-    for (int b = 1; b <DIMENSIONSTABLEAU ; b++) {
+
+    for (int b = 1; b < DIMENSIONSTABLEAU; b++) {
+        //Symbole selon donnée du tableau:
+        //.................. * pour test slt:
         printf("*");
         printf(" %c ", DVSB);
     }
@@ -62,10 +69,26 @@ void lignedonneegrille(){
 
 }
 
+void lignemilieugrille() {
+    printf("%c", DVLB);
+    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
+        traits3horiz();
+        printf("%c", DC);
+    }
+    traits3horiz();
+    printf("%c\n", DVRB);
+}
+
+
 void Affgrille() {
 
     lignesuperieurgrille();
-    lignedonneegrille();
+    for (int c = 1; c < DIMENSIONSTABLEAU; c++) {
+        lignedonneegrille();
+        lignemilieugrille();
+    }
+    lignedonneegrille();    //c'est la derniere.
+    grilleinferieur();
 
 
 }
