@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 
 //TOUS LES SYMBOLES SPéCIAUX:
 #define STLC 218 // ┌, Single Top Left Corner
@@ -26,13 +27,21 @@
 
 
 //Fonction affichage de la grille:
-void Affgrille() {
+//Sous-fonctions pour la grille:
+void traits3(){
 
+}
+void Affgrille() {
+    printf ("%c%c%c\n",DHSB,DHSB,DHSB);
 
 
 }
 
 int main() {
+    SetConsoleOutputCP(65001); // For accented characters
+    SetConsoleOutputCP(437); // For semi-graphic characters
+
+
     //Espaces declarations de variables:
     int choixhelp;  //choix d'afficher l'aide ou pas, avec 0 ou 1.
 
