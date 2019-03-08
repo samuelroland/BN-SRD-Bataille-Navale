@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\semicaracterestestcodecarrel.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\semicaracterestestcodecarrel.dir/objects.a @CMakeFiles\semicaracterestestcodecarrel.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\semicaracterestestcodecarrel.dir/objects.a -Wl,--no-whole-archive  -o semicaracterestestcodecarrel.exe -Wl,--out-implib,libsemicaracterestestcodecarrel.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\semicaracterestestcodecarrel.dir\linklibs.rsp

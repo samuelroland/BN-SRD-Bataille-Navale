@@ -1,0 +1,4 @@
+"C:\Program Files (x86)\CLion\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Github_Repos\Bataille-Navale\semicaracterestestcodecarrel
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Github_Repos/Bataille-Navale/semicaracterestestcodecarrel/cmake-build-debug
