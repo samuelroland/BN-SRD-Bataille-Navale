@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <windows.h>
 
+#define DIMENSIONSTABLEAU 8 //dimensions du tableaux: 8*8 cases.
+
 //TOUS LES SYMBOLES SPéCIAUX:
 #define STLC 218 // ┌, Single Top Left Corner
 #define STRC 191 // ┐, Single Top Right Corner
@@ -28,11 +30,42 @@
 
 //Fonction affichage de la grille:
 //Sous-fonctions pour la grille:
-void traits3(){
+void traits3horiz() {
+    printf("%c%c%c", DHSB, DHSB, DHSB);
+}
+
+void lignesuperieurgrille() {
+    printf("%c", DTLC);
+    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
+        traits3horiz();
+        printf("%c", DHTB);
+    }
+    traits3horiz();
+    printf("%c\n", DTRC);
+}
+
+void lignedonneegrille(){
+    SetConsoleOutputCP(65001); // For accented characters
+    SetConsoleOutputCP(437); // For semi-graphic characters
+
+    printf("%c ", DVSB);    // ca fera ca ║
+
+
+    //Symbole selon donnée du tableau:
+    //.................. * pour test slt:
+    for (int b = 1; b <DIMENSIONSTABLEAU ; b++) {
+        printf("*");
+        printf(" %c ", DVSB);
+    }
+    printf("*");
+    printf(" %c\n", DVSB);
 
 }
+
 void Affgrille() {
-    printf ("%c%c%c\n",DHSB,DHSB,DHSB);
+
+    lignesuperieurgrille();
+    lignedonneegrille();
 
 
 }
@@ -86,7 +119,6 @@ int main() {
     printf("\nTapez une touche pour quitter l’aide …");
     getchar();
     getchar();
-
 
 
     return 0;

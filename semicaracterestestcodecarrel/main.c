@@ -43,9 +43,9 @@ int main(void)
     printf ("\n\nUne grille basée sur les lignes doubles:\n");
     SetConsoleOutputCP(437); // For semi-graphic characters
     printf ("%c%c%c%c%c%c%c%c%c\n",DTLC,DHSB,DHSB,DHSB,DHTB,DHSB,DHSB,DHSB,DTRC);
-    printf ("%c   %c   %c\n",DVSB,DVSB,DVSB);
+    printf ("%c b %c b %c\n",DVSB,DVSB,DVSB);
     printf ("%c%c%c%c%c%c%c%c%c\n",DVLB,DHSB,DHSB,DHSB,DC,DHSB,DHSB,DHSB,DVRB);
-    printf ("%c   %c   %c\n",DVSB,DVSB,DVSB);
+    printf ("%c a %c a %c\n",DVSB,DVSB,DVSB);
     printf ("%c%c%c%c%c%c%c%c%c\n",DBLC,DHSB,DHSB,DHSB,DHBB,DHSB,DHSB,DHSB,DBRC);
     getchar();
     getchar();
