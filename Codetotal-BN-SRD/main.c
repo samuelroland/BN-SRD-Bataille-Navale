@@ -15,7 +15,7 @@ int main() {
            "Voulez-vous apprendre à jouer ? (tapez 1 pour oui ou 0 pour non): ");
     scanf("%d", &choixhelp);
 
-   //Vérification du nombre si différent de 1 et 0:
+    //Vérification du nombre si différent de 1 et 0:
     while ((choixhelp != 1) && (choixhelp != 0)) {
         printf("Eh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même… ");
         scanf("%d", &choixhelp);
@@ -23,7 +23,7 @@ int main() {
 
     switch (choixhelp) {
         case 0:
-            printf("Parfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !\n");
+            printf("Parfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
         case 1:
             //Afficher la grille:
@@ -46,8 +46,14 @@ int main() {
                    "Si vous retestez une case que vous avez déjà testée, le programme vous avertira et vous laissera recommencer.\n"
                    "\n"
                    "Une fois que vous avez touché les 3 bateaux, un message s’affiche vous annonçant que vous avez gagné.");
+
             break;
     }
+    printf("\nTapez une touche pour quitter l’aide …");
+    getchar();
+    getchar();
+
+
 
     return 0;
 }
