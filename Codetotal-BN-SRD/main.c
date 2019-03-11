@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
+#pragma execution_character_set( "utf-8" )
 #define DIMENSIONSTABLEAU 8 //dimensions du tableaux: 8*8 cases.
 
 //TOUS LES SYMBOLES SPéCIAUX:
@@ -33,6 +33,7 @@ void lignesuperieurgrille() {
     traits3horiz();
     printf("%c\n", DTRC);
 }
+
 void ligneinferieurgrille() {
     printf("%c", DBLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╩
@@ -63,6 +64,7 @@ void lignedonneegrille() {
     printf(" %c\n", DVSB);
 
 }
+
 void lignemilieugrille() {
     printf("%c", DVLB);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
@@ -88,7 +90,7 @@ void Affgrille() {
 }
 
 int main() {
-    SetConsoleOutputCP(65001); // For accented characters
+    SetConsoleOutputCP( 65001 ); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
 
@@ -112,6 +114,8 @@ int main() {
             break;
         case 1:
             //Afficher la grille:
+            system("cls");
+            printf("Bataille Navale – Apprendre à jouer");
             Affgrille();
             //Afficher l'aide:
             printf("\n\nVous êtes sur un jeu de bataille navale.\n"
