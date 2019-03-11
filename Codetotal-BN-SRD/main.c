@@ -113,9 +113,8 @@ int main() {
             printf("\n\nParfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
         case 1:
-            //Afficher la grille:
             system("cls");
-            printf("Bataille Navale – Apprendre à jouer");
+            printf("Bataille Navale – Apprendre à jouer\n\n");
             Affgrille();
             //Afficher l'aide:
             printf("\n\nVous êtes sur un jeu de bataille navale.\n"
@@ -134,7 +133,6 @@ int main() {
                    "Si vous retestez une case que vous avez déjà testée, le programme vous avertira et vous laissera recommencer.\n"
                    "\n"
                    "Une fois que vous avez touché les 3 bateaux, un message s’affiche vous annonçant que vous avez gagné.");
-
             break;
     }
     printf("\nTapez une touche pour quitter l’aide …");
