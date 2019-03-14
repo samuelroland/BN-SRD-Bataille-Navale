@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="80" column="85" selection-start-line="80" selection-start-column="85" selection-end-line="80" selection-end-column="85" />
+            <state relative-caret-position="382">
+              <caret line="126" column="65" lean-forward="true" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -80,8 +80,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="width" value="943" />
+    <option name="x" value="692" />
+    <option name="width" value="1235" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -150,19 +150,19 @@
       <workItem from="1552318288635" duration="35000" />
       <workItem from="1552318333544" duration="39000" />
       <workItem from="1552318383930" duration="1343000" />
-      <workItem from="1552573629350" duration="1607000" />
+      <workItem from="1552573629350" duration="2877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18724000" />
+    <option name="totallyTimeSpent" value="19994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="0" width="943" height="1087" extended-state="0" />
+    <frame x="692" y="0" width="1235" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4868217" visible="true" weight="0.03624009" />
-      <window_info id="Structure" order="1" sideWeight="0.5131783" side_tool="true" visible="true" weight="0.03624009" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4884696" visible="true" weight="0.027234042" />
+      <window_info id="Structure" order="1" sideWeight="0.5115304" side_tool="true" visible="true" weight="0.027234042" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -176,7 +176,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32917964" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32389936" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32389936" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -197,10 +197,17 @@
     <entry file="file://$PROJECT_DIR$/../semicaracterestestcodecarrel/main.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://C:/MinGW/include/wincon.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="182" column="12" selection-start-line="182" selection-start-column="12" selection-end-line="182" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="80" column="85" selection-start-line="80" selection-start-column="85" selection-end-line="80" selection-end-column="85" />
+        <state relative-caret-position="382">
+          <caret line="126" column="65" lean-forward="true" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

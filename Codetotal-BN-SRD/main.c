@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <windows.h>
+
 #pragma execution_character_set( "utf-8" )
+
 #define DIMENSIONSTABLEAU 8 //dimensions du tableaux: 8*8 cases.
 
 //TOUS LES SYMBOLES SPéCIAUX:
@@ -18,7 +20,6 @@
 #define DC   206 // ╬, Double Center
 
 
-
 //Sous-fonctions pour la grille:
 void traits3horiz() {
     printf("%c%c%c", DHSB, DHSB, DHSB);
@@ -26,6 +27,7 @@ void traits3horiz() {
 
 //Lignes début et fin:
 void lignesuperieurgrille() {
+    SetConsoleOutputCP(437); // For semi-graphic characters
     printf("   %c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
@@ -51,7 +53,7 @@ void lignedonneegrille(int i) {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
-    printf(" %d %c ",i, DVSB);    // ca fera ca ║
+    printf(" %d %c ", i, DVSB);    // ca fera ca ║
 
     for (int b = 1; b < DIMENSIONSTABLEAU; b++) {
         //Symbole selon donnée du tableau:
@@ -76,7 +78,7 @@ void lignemilieugrille() {
 
 //Fonction affichage de la grille:
 void Affgrille() {
-    int i=1;
+    int i = 1;
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
 
@@ -93,33 +95,36 @@ void Affgrille() {
 }
 
 int main() {
-    SetConsoleOutputCP( 65001 ); // For accented characters
+    SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
-
 
     //Espaces declarations de variables:
     int choixhelp;  //choix d'afficher l'aide ou pas, avec 0 ou 1.
 
-
+    SetConsoleOutputCP(65001); // For accented characters
     printf("Jeu de la bataille Navale.\n"
            "Voulez-vous apprendre à jouer ? (tapez 1 pour oui ou 0 pour non): ");
     scanf("%d", &choixhelp);
 
     //Vérification du nombre si différent de 1 et 0:
     while ((choixhelp != 1) && (choixhelp != 0)) {
+        SetConsoleOutputCP(65001); // For accented characters
         printf("Eh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même… ");
         scanf("%d", &choixhelp);
     }
 
     switch (choixhelp) {
         case 0:
+            SetConsoleOutputCP(65001); // For accented characters
             printf("\n\nParfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
         case 1:
+
             system("cls");
             printf("Bataille Navale – Apprendre à jouer\n\n");
             Affgrille();
             //Afficher l'aide:
+            SetConsoleOutputCP(65001); // For accented characters
             printf("\n\nVous êtes sur un jeu de bataille navale.\n"
                    "Voici les règles du jeu :\n"
                    "Le but : Couler tous les bateaux adverses placés quelque part en mer (sur le plateau de jeu de 64 cases), avec des explosifs.\n"
