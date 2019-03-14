@@ -18,6 +18,7 @@
 #define DC   206 // ╬, Double Center
 
 
+
 //Sous-fonctions pour la grille:
 void traits3horiz() {
     printf("%c%c%c", DHSB, DHSB, DHSB);
@@ -25,7 +26,7 @@ void traits3horiz() {
 
 //Lignes début et fin:
 void lignesuperieurgrille() {
-    printf("  %c", DTLC);
+    printf("   %c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DHTB);
@@ -35,7 +36,7 @@ void lignesuperieurgrille() {
 }
 
 void ligneinferieurgrille() {
-    printf("  %c", DBLC);
+    printf("   %c", DBLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╩
         traits3horiz();
         printf("%c", DHBB);
@@ -50,8 +51,7 @@ void lignedonneegrille(int i) {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
-
-    printf("%d %c ",i, DVSB);    // ca fera ca ║
+    printf(" %d %c ",i, DVSB);    // ca fera ca ║
 
     for (int b = 1; b < DIMENSIONSTABLEAU; b++) {
         //Symbole selon donnée du tableau:
@@ -65,7 +65,7 @@ void lignedonneegrille(int i) {
 }
 
 void lignemilieugrille() {
-    printf("  %c", DVLB);
+    printf("   %c", DVLB);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DC);
@@ -77,6 +77,9 @@ void lignemilieugrille() {
 //Fonction affichage de la grille:
 void Affgrille() {
     int i=1;
+    //premiere ligne de lettre:
+    printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
+
     lignesuperieurgrille();
     for (int c = 1; c < DIMENSIONSTABLEAU; c++) {
         lignedonneegrille(i);
