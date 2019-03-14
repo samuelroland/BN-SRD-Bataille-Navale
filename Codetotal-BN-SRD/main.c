@@ -27,7 +27,7 @@ void traits3horiz() {
 
 //Lignes début et fin:
 void lignesuperieurgrille() {
-    SetConsoleOutputCP(437); // For semi-graphic characters
+
     printf("   %c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
@@ -50,8 +50,6 @@ void ligneinferieurgrille() {
 
 //Lignes entre deux:
 void lignedonneegrille(int i) {
-    SetConsoleOutputCP(65001); // For accented characters
-    SetConsoleOutputCP(437); // For semi-graphic characters
 
     printf(" %d %c ", i, DVSB);    // ca fera ca ║
 
@@ -78,6 +76,8 @@ void lignemilieugrille() {
 
 //Fonction affichage de la grille:
 void Affgrille() {
+    SetConsoleOutputCP(65001); // For accented characters
+    SetConsoleOutputCP(437); // For semi-graphic characters
     int i = 1;
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
