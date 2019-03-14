@@ -25,7 +25,7 @@ void traits3horiz() {
 
 //Lignes début et fin:
 void lignesuperieurgrille() {
-    printf("%c", DTLC);
+    printf("  %c", DTLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DHTB);
@@ -35,7 +35,7 @@ void lignesuperieurgrille() {
 }
 
 void ligneinferieurgrille() {
-    printf("%c", DBLC);
+    printf("  %c", DBLC);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╩
         traits3horiz();
         printf("%c", DHBB);
@@ -46,13 +46,12 @@ void ligneinferieurgrille() {
 
 
 //Lignes entre deux:
-void lignedonneegrille() {
+void lignedonneegrille(int i) {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
-    printf("%c ", DVSB);    // ca fera ca ║
 
-
+    printf("%d %c ",i, DVSB);    // ca fera ca ║
 
     for (int b = 1; b < DIMENSIONSTABLEAU; b++) {
         //Symbole selon donnée du tableau:
@@ -66,7 +65,7 @@ void lignedonneegrille() {
 }
 
 void lignemilieugrille() {
-    printf("%c", DVLB);
+    printf("  %c", DVLB);
     for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DC);
@@ -77,13 +76,14 @@ void lignemilieugrille() {
 
 //Fonction affichage de la grille:
 void Affgrille() {
-
+    int i=1;
     lignesuperieurgrille();
     for (int c = 1; c < DIMENSIONSTABLEAU; c++) {
-        lignedonneegrille();
+        lignedonneegrille(i);
+        i++;    //pour le numero avant la ligne.
         lignemilieugrille();
     }
-    lignedonneegrille();    //c'est la derniere ligne de donnée.
+    lignedonneegrille(i);    //c'est la derniere ligne de donnée.
     ligneinferieurgrille();
 
 
