@@ -26,10 +26,10 @@ void traits3horiz() {
 }
 
 //Lignes début et fin:
-void lignesuperieurgrille() {
+void lignesuperieurgrille(int Dimensions) {
 
     printf("   %c", DTLC);
-    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
+    for (int a = 1; a < Dimensions; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DHTB);
     }
@@ -37,9 +37,9 @@ void lignesuperieurgrille() {
     printf("%c\n", DTRC);
 }
 
-void ligneinferieurgrille() {
+void ligneinferieurgrille(int Dimensions) {
     printf("   %c", DBLC);
-    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╩
+    for (int a = 1; a < Dimensions; a++) {   //Faire 7 fois: ═ ═ ═ ╩
         traits3horiz();
         printf("%c", DHBB);
     }
@@ -49,11 +49,11 @@ void ligneinferieurgrille() {
 
 
 //Lignes entre deux:
-void lignedonneegrille(int i) {
+void lignedonneegrille(int i, int Dimensions) {
 
     printf(" %d %c ", i, DVSB);    // ca fera ca ║
 
-    for (int b = 1; b < DIMENSIONSTABLEAU; b++) {
+    for (int b = 1; b < Dimensions; b++) {
         //Symbole selon donnée du tableau:
         //.................. * pour test slt:
         printf("*");
@@ -64,9 +64,9 @@ void lignedonneegrille(int i) {
 
 }
 
-void lignemilieugrille() {
+void lignemilieugrille( int Dimensions) {
     printf("   %c", DVLB);
-    for (int a = 1; a < DIMENSIONSTABLEAU; a++) {   //Faire 7 fois: ═ ═ ═ ╦
+    for (int a = 1; a < Dimensions; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
         printf("%c", DC);
     }
@@ -82,14 +82,14 @@ void Affgrille() {
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
 
-    lignesuperieurgrille();
+    lignesuperieurgrille(DIMENSIONSTABLEAU);
     for (int c = 1; c < DIMENSIONSTABLEAU; c++) {
-        lignedonneegrille(i);
+        lignedonneegrille(i, DIMENSIONSTABLEAU);
         i++;    //pour le numero avant la ligne.
-        lignemilieugrille();
+        lignemilieugrille(DIMENSIONSTABLEAU);
     }
-    lignedonneegrille(i);    //c'est la derniere ligne de donnée.
-    ligneinferieurgrille();
+    lignedonneegrille(i, DIMENSIONSTABLEAU);    //c'est la derniere ligne de donnée.
+    ligneinferieurgrille(DIMENSIONSTABLEAU);
 
 
 }
