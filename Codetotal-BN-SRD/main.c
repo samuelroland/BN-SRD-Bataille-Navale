@@ -19,6 +19,20 @@
 #define DHTB 203 // ╦, Double Horizontal Top Border
 #define DC   206 // ╬, Double Center
 
+void printdata() {
+    //Grille de test pour afficher les symboles.
+    int grilletest[8][8] = {
+            1, 0, 0, 0, 0, 0, 0, 0,
+            1, 0, 0, 1, 0, 0, 0, 0,
+            1, 0, 0, 1, 0, 0, 0, 0,
+            1, 0, 0, 1, 0, 0, 0, 0,
+            1, 0, 0, 0, 0, 0, 0, 0,
+            1, 0, 0, 0, 1, 1, 0, 0,
+            1, 0, 0, 0, 0, 0, 0, 0,
+            1, 0, 0, 0, 0, 0, 0, 0
+    };
+
+}
 
 //Sous-fonctions pour la grille:
 void traits3horiz() {
@@ -27,7 +41,6 @@ void traits3horiz() {
 
 //Lignes début et fin:
 void lignesuperieurgrille(int Dimensions) {
-
     printf("   %c", DTLC);
     for (int a = 1; a < Dimensions; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
@@ -47,12 +60,9 @@ void ligneinferieurgrille(int Dimensions) {
     printf("%c\n", DBRC);
 }
 
-
 //Lignes entre deux:
 void lignedonneegrille(int i, int Dimensions) {
-
     printf(" %d %c ", i, DVSB);    // ca fera ca ║
-
     for (int b = 1; b < Dimensions; b++) {
         //Symbole selon donnée du tableau:
         //.................. * pour test slt:
@@ -61,10 +71,9 @@ void lignedonneegrille(int i, int Dimensions) {
     }
     printf("*");
     printf(" %c\n", DVSB);
-
 }
 
-void lignemilieugrille( int Dimensions) {
+void lignemilieugrille(int Dimensions) {
     printf("   %c", DVLB);
     for (int a = 1; a < Dimensions; a++) {   //Faire 7 fois: ═ ═ ═ ╦
         traits3horiz();
@@ -90,8 +99,6 @@ void Affgrille() {
     }
     lignedonneegrille(i, DIMENSIONSTABLEAU);    //c'est la derniere ligne de donnée.
     ligneinferieurgrille(DIMENSIONSTABLEAU);
-
-
 }
 
 int main() {
