@@ -32,6 +32,8 @@ void printdata() {
             1, 0, 0, 0, 0, 0, 0, 0
     };
 
+
+
 }
 
 //Sous-fonctions pour la grille:
@@ -64,9 +66,8 @@ void ligneinferieurgrille(int Dimensions) {
 void lignedonneegrille(int i, int Dimensions) {
     printf(" %d %c ", i, DVSB);    // ca fera ca ║
     for (int b = 1; b < Dimensions; b++) {
-        //Symbole selon donnée du tableau:
-        //.................. * pour test slt:
-        printf("*");
+        //Symbole selon donnée du tableau, avec la fonction printdata().
+        printdata();
         printf(" %c ", DVSB);
     }
     printf("*");
@@ -101,6 +102,24 @@ void Affgrille() {
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 }
 
+void Affgrille2(){  //autre manière de faire la fonction.
+    SetConsoleOutputCP(65001); // For accented characters
+    SetConsoleOutputCP(437); // For semi-graphic characters
+    int i = 1;
+    //premiere ligne de lettre:
+    printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
+    lignesuperieurgrille(DIMENSIONSTABLEAU);
+    for (int row = 0; row < DIMENSIONSTABLEAU ; row++) {
+
+        if(row>0){
+
+            lignemilieugrille(DIMENSIONSTABLEAU);
+        }
+        lignedonneegrille(i, DIMENSIONSTABLEAU);
+        i++;
+    }
+    ligneinferieurgrille(DIMENSIONSTABLEAU);
+}
 int main() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
