@@ -19,7 +19,7 @@
 #define DHTB 203 // ╦, Double Horizontal Top Border
 #define DC   206 // ╬, Double Center
 
-void printdata() {
+void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
     //Grille de test pour afficher les symboles.
     int grilletest[8][8] = {
             1, 0, 0, 0, 0, 0, 0, 0,
@@ -32,7 +32,7 @@ void printdata() {
             1, 0, 0, 0, 0, 0, 0, 0
     };
 
-
+    printf("%d ", grilletest[i-1][l-1]);
 
 }
 
@@ -64,14 +64,19 @@ void ligneinferieurgrille(int Dimensions) {
 
 //Lignes entre deux:
 void lignedonneegrille(int i, int Dimensions) {
+    int l=1;    //numero de case.
+
     printf(" %d %c ", i, DVSB);    // ca fera ca ║
     for (int b = 1; b < Dimensions; b++) {
         //Symbole selon donnée du tableau, avec la fonction printdata().
-        printdata();
+        printdata(i, l);
         printf(" %c ", DVSB);
+        l++;
     }
-    printf("*");
+    printdata(i, l);
     printf(" %c\n", DVSB);
+
+
 }
 
 void lignemilieugrille(int Dimensions) {
