@@ -1,19 +1,26 @@
-# Bataille-Navale
-Projet bataille navale en C
-DESCRIPTIF DU PROJET
-	7.1	Généralités
-Ce module MA-20 a pour objectifs d'entraîner les étudiants à la réalisation de projet de type développement.
-7.2	Fonctionnalités minimales
-Le type d’application C demandé doit offrir les fonctionnalités minimales suivantes :
-Version 0.1 (pour le 2 mars 2018) :
-•	Jouer à la bataille navale alors que la position des bateaux est codée dans le programme
-•	Afficher l’aide du jeu
-Version 1.0 (pour le 20 avril 2018)
-•	S’authentifier en tant que joueur
-•	Logger les faits importants durant toute la durée de fonctionnement de l’application
-•	Le programme choisit une grille au hasard dans un répertoire et la charge 
-•	Afficher la liste des scores atteints lors des parties précédentes
-Notes : 
-•	Des fichiers seront utilisés pour la persistance des données.
-•	Un menu de type console sera utilisé pour accéder aux différentes fonctionnalités.
-•	Une extension pourra être envisagée pour ceux qui auraient terminé toutes les fonctionnalités avant la fin du temps imparti. Elle sera à discuter entre l’élève et le mandant du projet.
+# Bataille Navale
+
+## Description
+Le projet Bataille Navale est un jeu en mode console de la bataille navale. On est seul à jouer contre l'ordinateur. 
+
+## Génération
+
+Vous aurez besoin de:
+
+- Clion
+- un compilateur C
+- Un Ordinateur avec Windows
+- L'Invite de commandes
+
+Pour générer l'exécutable, vous devez:
+1. Aller sur le Repository BN-SRD-Bataille-Navale sur Github [ici](https://github.com/samuelroland/BN-SRD-Bataille-Navale)
+1. Dans le dossier Codetotal-BN-SRD du Repos: prenez le CMakeLists.txt et le main.c. Placez-les dans un dossier  en local "bataille_navale_test" 
+(nommé sans accent ni espace en tous cas). Ouvrez le CMakeLists.txt avec CLion puis ouvrez le main.c avec CLion.
+1. Builder le projet dans CLion.
+
+
+## Exécution
+Pour exécuter le programme, vous devez:
+
+1. Télécharger en local le fichier Codetotal-BN-SRD.exe dans BN-SRD-Bataille-Navale\Codetotal-BN-SRD\cmake-build-debug\
+1. Executez le fichier avec l'Invite de commandes.
