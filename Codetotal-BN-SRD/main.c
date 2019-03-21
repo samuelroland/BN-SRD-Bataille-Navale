@@ -35,8 +35,24 @@ void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (e
             0, 0, 0, 0, 0, 0, 0, 1
     };
 
-    printf("%d", grilletest[i-1][l-1]);
-
+    //pour afficher la donnée du tableau:  printf("%d", grilletest[i-1][l-1]);
+    switch (grilletest[i-1][l-1]){
+        case 0:
+            printf(" ");
+            break;
+        case 1:
+            printf("O");
+            break;
+        case 2:
+            printf("O");
+            break;
+        case 3:
+            printf("O");
+            break;
+        case -1:
+            printf("X");
+            break;
+    }
 }
 
 //Sous-fonctions pour la grille:
