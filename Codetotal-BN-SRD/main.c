@@ -32,7 +32,7 @@ void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (e
             1, 0, 0, 0, 0, 0, 0, 0
     };
 
-    printf("%d ", grilletest[i-1][l-1]);
+    printf("%d", grilletest[i-1][l-1]);
 
 }
 
