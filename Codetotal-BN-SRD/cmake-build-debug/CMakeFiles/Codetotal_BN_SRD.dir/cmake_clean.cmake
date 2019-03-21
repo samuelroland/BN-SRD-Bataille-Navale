@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Codetotal_BN_SRD.dir/main.c.o"
+  "CMakeFiles/Codetotal_BN_SRD.dir/main.c.obj"
   "Codetotal_BN_SRD.pdb"
-  "Codetotal_BN_SRD"
+  "Codetotal_BN_SRD.exe"
+  "Codetotal_BN_SRD.exe.manifest"
+  "libCodetotal_BN_SRD.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
