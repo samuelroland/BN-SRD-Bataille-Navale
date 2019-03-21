@@ -58,8 +58,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="286">
+              <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+              <folding>
+                <element signature="e#753#1268#0" />
+                <element signature="e#1270#1366#0" />
+                <element signature="e#1368#1636#0" />
+                <element signature="e#1638#1883#0" />
+                <element signature="e#1885#2281#0" />
+                <element signature="e#2283#2523#0" />
+                <element signature="e#3816#6593#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="306" />
     <option name="y" value="-16" />
     <option name="width" value="959" />
@@ -166,12 +175,12 @@
       <workItem from="1552634059410" duration="4096000" />
       <workItem from="1552896568021" duration="2000" />
       <workItem from="1553112265952" duration="2781000" />
-      <workItem from="1553153751498" duration="1081000" />
+      <workItem from="1553153751498" duration="1316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28738000" />
+    <option name="totallyTimeSpent" value="28973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -216,8 +225,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="286">
+          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+          <folding>
+            <element signature="e#753#1268#0" />
+            <element signature="e#1270#1366#0" />
+            <element signature="e#1368#1636#0" />
+            <element signature="e#1638#1883#0" />
+            <element signature="e#1885#2281#0" />
+            <element signature="e#2283#2523#0" />
+            <element signature="e#3816#6593#0" />
+          </folding>
         </state>
       </provider>
     </entry>
