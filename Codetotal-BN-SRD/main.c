@@ -19,17 +19,20 @@
 #define DHTB 203 // ╦, Double Horizontal Top Border
 #define DC   206 // ╬, Double Center
 
+//Symboles sur la grille:
+#define casblanc 219    //caractère case blanche.
+
 void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
     //Grille de test pour afficher les symboles.
     int grilletest[8][8] = {
-            1, 0, 0, 0, 0, 0, 0, 0,
-            1, 0, 0, 1, 0, 0, 0, 0,
-            1, 0, 0, 1, 0, 0, 0, 0,
-            1, 0, 0, 1, 0, 0, 0, 0,
-            1, 0, 0, 0, 0, 0, 0, 0,
-            1, 0, 0, 0, 1, 1, 0, 0,
-            1, 0, 0, 0, 0, 0, 0, 0,
-            1, 0, 0, 0, 0, 0, 0, 0
+            2, 2, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 3, 0, 0, 0, 0,
+            0, 0, 0, 3, 0, 0, 0, 0,
+            0, 0, 0, 3, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 1
     };
 
     printf("%d", grilletest[i-1][l-1]);
@@ -66,7 +69,7 @@ void ligneinferieurgrille(int Dimensions) {
 void lignedonneegrille(int i, int Dimensions) {
     int l=1;    //numero de case.
 
-    printf(" %d %c ", i, DVSB);    // ca fera ca ║
+    printf(" %d %c ", i, DVSB);    // ça fera ça ║
     for (int b = 1; b < Dimensions; b++) {
         //Symbole selon donnée du tableau, avec la fonction printdata().
         printdata(i, l);
@@ -93,35 +96,29 @@ void lignemilieugrille(int Dimensions) {
 void Affgrille() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
-    int i = 1;
+    int row;
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
-
     lignesuperieurgrille(DIMENSIONSTABLEAU);
-    for (int c = 1; c < DIMENSIONSTABLEAU; c++) {
-        lignedonneegrille(i, DIMENSIONSTABLEAU);
-        i++;    //pour le numero avant la ligne.
+    for (row = 1; row < DIMENSIONSTABLEAU; row++) {
+        lignedonneegrille(row, DIMENSIONSTABLEAU);
         lignemilieugrille(DIMENSIONSTABLEAU);
     }
-    lignedonneegrille(i, DIMENSIONSTABLEAU);    //c'est la derniere ligne de donnée.
+    lignedonneegrille(row, DIMENSIONSTABLEAU);    //c'est la derniere ligne de donnée.
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 }
 
 void Affgrille2(){  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
-    int i = 1;
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
     lignesuperieurgrille(DIMENSIONSTABLEAU);
     for (int row = 0; row < DIMENSIONSTABLEAU ; row++) {
-
         if(row>0){
-
             lignemilieugrille(DIMENSIONSTABLEAU);
         }
-        lignedonneegrille(i, DIMENSIONSTABLEAU);
-        i++;
+        lignedonneegrille(row+1, DIMENSIONSTABLEAU);
     }
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 }
@@ -150,7 +147,6 @@ int main() {
             printf("\n\nParfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
         case 1:
-
             system("cls");
             printf("Bataille Navale – Apprendre à jouer\n\n");
             Affgrille();
@@ -173,6 +169,8 @@ int main() {
                    "\n"
                    "Une fois que vous avez touché les 3 bateaux, un message s’affiche vous annonçant que vous avez gagné.");
             break;
+        default:
+            printf("\nEh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même…");
     }
     printf("\nTapez une touche pour quitter l’aide …");
     getchar();

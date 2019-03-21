@@ -58,26 +58,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
-                <element signature="e#753#1268#0" />
                 <element signature="e#1270#1366#0" />
                 <element signature="e#1368#1636#0" />
                 <element signature="e#1638#1883#0" />
-                <element signature="e#1885#2281#0" />
                 <element signature="e#2283#2523#0" />
-                <element signature="e#3816#6593#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -99,10 +87,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="306" />
-    <option name="y" value="-16" />
-    <option name="width" value="959" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="355" />
+    <option name="y" value="72" />
+    <option name="width" value="943" />
     <option name="height" value="746" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -127,7 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/CLionProjects/untitled_testsymboles" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -175,23 +163,23 @@
       <workItem from="1552634059410" duration="4096000" />
       <workItem from="1552896568021" duration="2000" />
       <workItem from="1553112265952" duration="2781000" />
-      <workItem from="1553153751498" duration="1316000" />
+      <workItem from="1553153751498" duration="6048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28973000" />
+    <option name="totallyTimeSpent" value="33705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48390445" visible="true" weight="0.1047409" />
-      <window_info id="Structure" order="1" sideWeight="0.5160955" side_tool="true" visible="true" weight="0.1047409" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48392037" visible="true" weight="0.1047409" />
+      <window_info id="Structure" order="1" sideWeight="0.5160796" side_tool="true" visible="true" weight="0.1047409" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7455867" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27102804" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -201,7 +189,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3219107" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3219107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -216,6 +204,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://C:/MinGW/include/wincon.h" />
+    <entry file="file://C:/CLionProjects/untitled_testsymboles/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -223,18 +221,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
-            <element signature="e#753#1268#0" />
             <element signature="e#1270#1366#0" />
             <element signature="e#1368#1636#0" />
             <element signature="e#1638#1883#0" />
-            <element signature="e#1885#2281#0" />
             <element signature="e#2283#2523#0" />
-            <element signature="e#3816#6593#0" />
           </folding>
         </state>
       </provider>
