@@ -27,40 +27,40 @@
 #define DC   206 // ╬, Double Center
 
 //Symboles sur la grille:
-#define casblanc 254    //caractère case blanche. ■
+#define cazblanc 254    //caractère case blanche. ■
 
 //Grille de test pour afficher les symboles.
 int grilletest[8][8] = {
-        2, 2, 0, 0, 0, 0, 0, 0,
+        2, 12, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 13, 0, 0, 0, 0,
+        0, 0, 0, 13, 0, -1, 0, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 3, 0, -1, 0, 0,
-        0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, -1, 0,
+        0, -1, 0, 0, 0, 0, -1, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 1
+        0, 0, 0, 0, 0, 0, 0, 11
 };
 
 void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
 
 
     //pour afficher la donnée du tableau:  printf("%d", grilletest[i-1][l-1]);
-    switch (grilletest[i-1][l-1]){
+    switch (grilletest[i - 1][l - 1]) {
         case 0:
             printf(" ");
             break;
         case 1:
-            printf("O");
-            break;
         case 2:
-            printf("O");
-            break;
         case 3:
             printf("O");
             break;
-        case -1:
+        case -1:    //Eau donc X
             printf("X");
             break;
+        case 11:
+        case 12:
+        case 13:
+            printf("%c", cazblanc);
     }
 }
 
@@ -92,7 +92,7 @@ void ligneinferieurgrille(int Dimensions) {
 
 //Lignes entre deux:
 void lignedonneegrille(int i, int Dimensions) {
-    int l=1;    //numero de case.
+    int l = 1;    //numero de case.
 
     printf(" %d %c ", i, DVSB);    // ça fera ça ║
     for (int b = 1; b < Dimensions; b++) {
@@ -133,20 +133,21 @@ void Affgrille() {
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 }
 
-void Affgrille2(){  //autre manière de faire la fonction.
+void Affgrille2() {  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
     lignesuperieurgrille(DIMENSIONSTABLEAU);
-    for (int row = 0; row < DIMENSIONSTABLEAU ; row++) {
-        if(row>0){
+    for (int row = 0; row < DIMENSIONSTABLEAU; row++) {
+        if (row > 0) {
             lignemilieugrille(DIMENSIONSTABLEAU);
         }
-        lignedonneegrille(row+1, DIMENSIONSTABLEAU);
+        lignedonneegrille(row + 1, DIMENSIONSTABLEAU);
     }
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 }
+
 int main() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
