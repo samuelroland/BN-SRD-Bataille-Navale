@@ -1,3 +1,10 @@
+/*
+ * Projet Bataille Navale. Module MA-20.
+ * Samuel Roland
+ * Date début du code: 7.03.2019
+ * Date fin du code: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ */
+
 #include <stdio.h>
 #include <windows.h>
 
