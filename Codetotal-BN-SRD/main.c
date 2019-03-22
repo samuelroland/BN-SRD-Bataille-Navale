@@ -27,20 +27,22 @@
 #define DC   206 // ╬, Double Center
 
 //Symboles sur la grille:
-#define casblanc 219    //caractère case blanche.
+#define casblanc 254    //caractère case blanche. ■
+
+//Grille de test pour afficher les symboles.
+int grilletest[8][8] = {
+        2, 2, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 3, 0, -1, 0, 0,
+        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, -1, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1
+};
 
 void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
-    //Grille de test pour afficher les symboles.
-    int grilletest[8][8] = {
-            2, 2, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 3, 0, 0, 0, 0,
-            0, 0, 0, 3, 0, 0, 0, 0,
-            0, 0, 0, 3, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 1
-    };
+
 
     //pour afficher la donnée du tableau:  printf("%d", grilletest[i-1][l-1]);
     switch (grilletest[i-1][l-1]){
