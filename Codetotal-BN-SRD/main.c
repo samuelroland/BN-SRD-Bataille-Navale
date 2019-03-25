@@ -116,21 +116,6 @@ void lignemilieugrille(int Dimensions) {
 }
 
 //Fonction affichage de la grille:
-void Affgrille() {
-    SetConsoleOutputCP(65001); // For accented characters
-    SetConsoleOutputCP(437); // For semi-graphic characters
-    int row;
-    //premiere ligne de lettre:
-    printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
-    lignesuperieurgrille(DIMENSIONSTABLEAU);
-    for (row = 1; row < DIMENSIONSTABLEAU; row++) {
-        lignedonneegrille(row, DIMENSIONSTABLEAU);
-        lignemilieugrille(DIMENSIONSTABLEAU);
-    }
-    lignedonneegrille(row, DIMENSIONSTABLEAU);    //c'est la derniere ligne de donnée.
-    ligneinferieurgrille(DIMENSIONSTABLEAU);
-}
-
 void Affgrille2() {  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
@@ -144,6 +129,11 @@ void Affgrille2() {  //autre manière de faire la fonction.
         lignedonneegrille(row + 1, DIMENSIONSTABLEAU);
     }
     ligneinferieurgrille(DIMENSIONSTABLEAU);
+    //partie légende des symboles:
+    printf("   Légendes:\n"
+           "   X = A l'eau\n"
+           "   O = Touché (bateau)\n"
+           "   ■ = Coulé (le bateau est touché en entier)\n");
 }
 
 int main() {
@@ -173,7 +163,8 @@ int main() {
         case 1:
             system("cls");
             printf("Bataille Navale – Apprendre à jouer\n\n");
-            Affgrille();
+            printf("Voici une grille de jeu en cours, pour exemple:\n");
+            Affgrille2();
             //Afficher l'aide:
             SetConsoleOutputCP(65001); // For accented characters
             printf("\n\nVous êtes sur un jeu de bataille navale.\n"
