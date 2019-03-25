@@ -30,12 +30,23 @@
 #define cazblanc 254    //caractère case blanche. ■
 
 //Grille de test pour afficher les symboles.
-int grilleexemple[8][8] = {
+int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
         12, 12, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 13, 0, 0, 0, 0,
         0, 0, 0, 13, 0, -1, 0, 0,
         0, 0, 0, 13, 0, 0, 0, 0,
         0, -1, 0, 0, 0, 0, -1, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 2, 2
+};
+
+int grillejeu[8][8] = {     //Grille pour le jeu
+        2, 2, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 3, 0, -1, 0, 0,
+        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, -1, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 2, 2
