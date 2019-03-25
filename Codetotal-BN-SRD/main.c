@@ -30,22 +30,20 @@
 #define cazblanc 254    //caractère case blanche. ■
 
 //Grille de test pour afficher les symboles.
-int grilletest[8][8] = {
-        2, 12, 0, 0, 0, 0, 0, 0,
+int grilleexemple[8][8] = {
+        12, 12, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 13, 0, 0, 0, 0,
         0, 0, 0, 13, 0, -1, 0, 0,
-        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 13, 0, 0, 0, 0,
         0, -1, 0, 0, 0, 0, -1, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 11
+        0, 0, 0, 0, 0, 0, 2, 2
 };
 
 void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
-
-
-    //pour afficher la donnée du tableau:  printf("%d", grilletest[i-1][l-1]);
-    switch (grilletest[i - 1][l - 1]) {
+    //pour afficher la donnée du tableau:  printf("%d", grilleexemple[i-1][l-1]);
+    switch (grilleexemple[i - 1][l - 1]) {
         case 0:
             printf(" ");
             break;

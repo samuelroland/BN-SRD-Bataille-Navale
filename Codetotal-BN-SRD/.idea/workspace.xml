@@ -58,11 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -72,6 +69,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>setconsole</find>
+      <find>grilletest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,18 +161,19 @@
       <workItem from="1553112265952" duration="2781000" />
       <workItem from="1553153751498" duration="6834000" />
       <workItem from="1553238677075" duration="4057000" />
+      <workItem from="1553499692638" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38548000" />
+    <option name="totallyTimeSpent" value="39152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48238897" visible="true" weight="0.049614113" />
-      <window_info id="Structure" order="1" sideWeight="0.517611" side_tool="true" visible="true" weight="0.049614113" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48085758" visible="true" weight="0.05016538" />
+      <window_info id="Structure" order="1" sideWeight="0.51914245" side_tool="true" visible="true" weight="0.05016538" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -225,11 +224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="50" column="18" lean-forward="true" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
         </state>
       </provider>
     </entry>
