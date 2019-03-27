@@ -29,7 +29,9 @@
 //Symboles sur la grille:
 #define cazblanc 254    //caractère case blanche. ■
 
-//Grille de test pour afficher les symboles.
+//Variables globales:
+int typegrille;
+
 int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
         12, 12, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 13, 0, 0, 0, 0,
@@ -52,9 +54,31 @@ int grillejeu[8][8] = {     //Grille pour le jeu
         0, 0, 0, 0, 0, 0, 2, 2
 };
 
-void printdata(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
-    //pour afficher la donnée du tableau:  printf("%d", grilleexemple[i-1][l-1]);
+
+void printdataex(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
+    //SLT pou la grilleexemple !
     switch (grilleexemple[i - 1][l - 1]) {
+        case 0:
+            printf(" ");
+            break;
+        case 1:
+        case 2:
+        case 3:
+            printf("O");
+            break;
+        case -1:    //Eau donc X
+            printf("X");
+            break;
+        case 11:
+        case 12:
+        case 13:
+            printf("%c", cazblanc);
+    }
+}
+
+void printdatajeu(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
+    //SLT pou la grillejeu !
+    switch (grillejeu[i - 1][l - 1]) {
         case 0:
             printf(" ");
             break;
@@ -105,12 +129,21 @@ void lignedonneegrille(int i, int Dimensions) {
 
     printf(" %d %c ", i, DVSB);    // ça fera ça ║
     for (int b = 1; b < Dimensions; b++) {
-        //Symbole selon donnée du tableau, avec la fonction printdata().
-        printdata(i, l);
+        //Si 0 alors grille d'exemple de l'aide. Si 1 alors grille de jeu.
+        if (typegrille == 0) {
+            printdataex(i, l);
+        } else {
+            printdatajeu(i, l);
+        }
+
         printf(" %c ", DVSB);
         l++;
     }
-    printdata(i, l);
+    if (typegrille == 0) {
+        printdataex(i, l);
+    } else {
+        printdatajeu(i, l);
+    }
     printf(" %c\n", DVSB);
 
 
@@ -175,6 +208,7 @@ int main() {
             system("cls");
             printf("Bataille Navale – Apprendre à jouer\n\n");
             printf("Voici une grille de jeu en cours, pour exemple:\n");
+            typegrille = 0;
             Affgrille2();
             //Afficher l'aide:
             SetConsoleOutputCP(65001); // For accented characters
