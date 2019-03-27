@@ -163,6 +163,9 @@ void lignemilieugrille(int Dimensions) {
 void Affgrille2() {  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
+    if (typegrille==1){
+        printf("PARTIE EN COURS - BATAILLE NAVALE\n");
+    }
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
     lignesuperieurgrille(DIMENSIONSTABLEAU);
@@ -178,6 +181,15 @@ void Affgrille2() {  //autre manière de faire la fonction.
            "   X = A l'eau\n"
            "   O = Touché (bateau)\n"
            "   ■ = Coulé (le bateau est touché en entier)\n");
+}
+void tirerunecase(){
+    char hits[2];   //deux cases pour les coups.
+    printf("Entrez une case: ");
+    scanf("%c%c", hits[0],hits[1]);
+    hits[0]-=35;
+    //pour test provisoire: possible de prendre un numero en char pour un int ?
+    printf("%d", grillejeu[hits[0]][hits[1]]);
+
 }
 
 int main() {
@@ -236,6 +248,13 @@ int main() {
     getchar();
     getchar();
 
+    //PARTIE JEU:
+    typegrille=1;   //Il n'y aura plus que des grilles de jeu !
+    printf("Tapez une touche pour commencer la partie: ");
+    getchar();
+
+    //Tirer une case:
+    tirerunecase();
 
     return 0;
 }
