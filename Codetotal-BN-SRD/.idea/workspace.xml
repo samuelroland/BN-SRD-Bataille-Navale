@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="180" column="57" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
+            <state relative-caret-position="535">
+              <caret line="190" column="16" lean-forward="true" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -158,19 +158,19 @@
       <workItem from="1553153751498" duration="6834000" />
       <workItem from="1553238677075" duration="4057000" />
       <workItem from="1553499692638" duration="5190000" />
-      <workItem from="1553759531695" duration="500000" />
+      <workItem from="1553759531695" duration="1322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47072000" />
+    <option name="totallyTimeSpent" value="47894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="803" y="0" width="1124" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47672254" visible="true" weight="0.27537593" />
-      <window_info id="Structure" order="1" sideWeight="0.52327746" side_tool="true" visible="true" weight="0.27537593" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4779874" visible="true" weight="0.082706764" />
+      <window_info id="Structure" order="1" sideWeight="0.5220126" side_tool="true" visible="true" weight="0.082706764" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -184,7 +184,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.4371069" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.4371069" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -203,8 +203,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="180" column="57" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
+        <state relative-caret-position="535">
+          <caret line="190" column="16" lean-forward="true" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
