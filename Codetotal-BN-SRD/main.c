@@ -176,7 +176,9 @@ void Affgrille2() {  //autre manière de faire la fonction.
         lignedonneegrille(row + 1, DIMENSIONSTABLEAU);
     }
     ligneinferieurgrille(DIMENSIONSTABLEAU);
+
     //partie légende des symboles:
+    SetConsoleOutputCP(65001); // For accented characters
     printf("   Légendes:\n"
            "   X = A l'eau\n"
            "   O = Touché (bateau)\n"
