@@ -163,7 +163,7 @@ void lignemilieugrille(int Dimensions) {
 void Affgrille2() {  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
-    if (typegrille==1){
+    if (typegrille == 1) {
         printf("PARTIE EN COURS - BATAILLE NAVALE\n");
     }
     //premiere ligne de lettre:
@@ -184,13 +184,37 @@ void Affgrille2() {  //autre manière de faire la fonction.
            "   O = Touché (bateau)\n"
            "   ■ = Coulé (le bateau est touché en entier)\n");
 }
-void tirerunecase(){
+
+void tirerunecase() {
     char hits[2];   //deux cases pour les coups.
     printf("Entrez une case: ");
-    scanf("%c%c", hits[0],hits[1]);
-    hits[0]-=35;
+    //prendre la case et verifier la valeur:
+    do {
+        scanf("%c%c", &hits[0], &hits[1]);
+        if ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56)) {
+            printf("Cette valeur ne correspond pas à une case ! Recommencez: ");
+        }
+    } while ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56));
+
+    printf("tiré %d %d ", hits[0], hits[1]);
+    hits[0] -= 65;
+    hits[1] -= 49;
+    printf("tiré %d %d ", hits[0], hits[1]);
     //pour test provisoire: possible de prendre un numero en char pour un int ?
-    printf("%d", grillejeu[hits[0]][hits[1]]);
+    printf(" contenu dans tab: %d", grillejeu[hits[0]][hits[1]]);
+    printf("\nPour %c%c: ", hits[0], hits[1]);
+
+    //Traitement du tir:
+    //Si il y a de l'eau.
+    if (grillejeu[hits[0]][hits[1]] == 0) {
+        grillejeu[hits[0]][hits[1]] = -1;
+        printf("A l'eau ...");
+    }
+    if (grillejeu[hits[0]][hits[1]] == -0) {
+
+        printf("Déjà tiré ici ! Refaites votre choix… ");
+    }
+
 
 }
 
@@ -251,11 +275,13 @@ int main() {
     getchar();
 
     //PARTIE JEU:
-    typegrille=1;   //Il n'y aura plus que des grilles de jeu !
+    typegrille = 1;   //Il n'y aura plus que des grilles de jeu !
     printf("Tapez une touche pour commencer la partie: ");
     getchar();
 
     //Tirer une case:
+    tirerunecase();
+    tirerunecase();
     tirerunecase();
 
     return 0;
