@@ -199,26 +199,26 @@ int main() {
     SetConsoleOutputCP(437); // For semi-graphic characters
 
     //Espaces declarations de variables:
-    int choixhelp;  //choix d'afficher l'aide ou pas, avec 0 ou 1.
+    char choixhelp[5];  //choix d'afficher l'aide ou pas, avec 0 ou 1.
 
     SetConsoleOutputCP(65001); // For accented characters
     printf("Jeu de la bataille Navale.\n"
            "Voulez-vous apprendre à jouer ? (tapez 1 pour oui ou 0 pour non): ");
-    scanf("%d", &choixhelp);
+    scanf("%s", &choixhelp);
 
     //Vérification du nombre si différent de 1 et 0:
-    while ((choixhelp != 1) && (choixhelp != 0)) {
+    while ((choixhelp[0] != '1') && (choixhelp[0] != '0')) {
         SetConsoleOutputCP(65001); // For accented characters
         printf("Eh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même… ");
-        scanf("%d", &choixhelp);
+        scanf("%s", &choixhelp);
     }
 
-    switch (choixhelp) {
-        case 0:
+    switch (choixhelp[0]) {
+        case '0':
             SetConsoleOutputCP(65001); // For accented characters
             printf("\n\nParfait, pas besoin de se fatiguer à vous apprendre comment faire ! Bonne chance d’avance et bonne partie !");
             break;
-        case 1:
+        case '1':
             system("cls");
             printf("Bataille Navale – Apprendre à jouer\n\n");
             printf("Voici une grille de jeu en cours, pour exemple:\n");
