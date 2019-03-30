@@ -31,6 +31,7 @@
 
 //Variables globales:
 int typegrille;
+int compteurcoups = 0;    //compte le nombre de coups avant de gagner.
 
 int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
         12, 12, 0, 0, 0, 0, 1, 0,
@@ -46,9 +47,9 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
 int grillejeu[8][8] = {     //Grille pour le jeu
         2, 2, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 3, 0, -1, 0, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, -1, 0,
+        0, 0, 0, 3, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 2, 2
@@ -64,7 +65,7 @@ void printdataex(int i, int l) {  //i= numero de la ligne. l= numero de la case 
         case 1:
         case 2:
         case 3:
-            printf("O");
+            printf(" ");
             break;
         case -1:    //Eau donc X
             printf("X");
@@ -72,7 +73,13 @@ void printdataex(int i, int l) {  //i= numero de la ligne. l= numero de la case 
         case 11:
         case 12:
         case 13:
+            printf("O");
+            break;
+        case 21:
+        case 22:
+        case 23:
             printf("%c", cazblanc);
+            break;
     }
 }
 
@@ -85,7 +92,7 @@ void printdatajeu(int i, int l) {  //i= numero de la ligne. l= numero de la case
         case 1:
         case 2:
         case 3:
-            printf("O");
+            printf(" ");
             break;
         case -1:    //Eau donc X
             printf("X");
@@ -93,7 +100,13 @@ void printdatajeu(int i, int l) {  //i= numero de la ligne. l= numero de la case
         case 11:
         case 12:
         case 13:
+            printf("O");
+            break;
+        case 21:
+        case 22:
+        case 23:
             printf("%c", cazblanc);
+            break;
     }
 }
 
@@ -164,7 +177,8 @@ void Affgrille2() {  //autre manière de faire la fonction.
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
     if (typegrille == 1) {
-        printf("PARTIE EN COURS - BATAILLE NAVALE\n");
+        system("cls");
+        printf("Bataille Navale – Partie en cours\n\n");
     }
     //premiere ligne de lettre:
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
@@ -185,6 +199,7 @@ void Affgrille2() {  //autre manière de faire la fonction.
            "   ■ = Coulé (le bateau est touché en entier)\n");
 }
 
+int result=-2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
 void tirerunecase() {
     char hits[2];   //deux cases pour les coups.
     printf("Entrez une case: ");
@@ -195,27 +210,64 @@ void tirerunecase() {
             printf("Cette valeur ne correspond pas à une case ! Recommencez: ");
         }
     } while ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56));
-
-    printf("tiré %d %d ", hits[0], hits[1]);
+    printf("\nPour %c%c: ", hits[0], hits[1]);
     hits[0] -= 65;
     hits[1] -= 49;
-    printf("tiré %d %d ", hits[0], hits[1]);
-    //pour test provisoire: possible de prendre un numero en char pour un int ?
-    printf(" contenu dans tab: %d", grillejeu[hits[0]][hits[1]]);
-    printf("\nPour %c%c: ", hits[0], hits[1]);
-
+    Affgrille2();
     //Traitement du tir:
     //Si il y a de l'eau.
-    if (grillejeu[hits[0]][hits[1]] == 0) {
-        grillejeu[hits[0]][hits[1]] = -1;
-        printf("A l'eau ...");
+
+    switch (grillejeu[hits[0]][hits[1]]) {
+        case -1:
+            //déja tiré ici:
+            result = -1;
+            break;
+        case 0:
+            //A l'eau !
+            grillejeu[hits[0]][hits[1]] = -1;
+            compteurcoups++;
+            result = 0;
+            break;
+        case 1:
+        case 2:
+        case 3:
+            //Touché !
+            result = 1;
+            grillejeu[hits[0]][hits[1]] += 10;
+            compteurcoups++;
+            break;
+        case 11:
+        case 12:
+        case 13:
+        case 21:
+        case 22:
+        case 23:
+            //déja tiré ici:
+            result = -1;
+            break;
+        default:
+            break;
     }
-    if (grillejeu[hits[0]][hits[1]] == -0) {
-
-        printf("Déjà tiré ici ! Refaites votre choix… ");
+}
+void resultaff(){
+    switch (result) {
+        case -2:
+            //Ne rien faire.
+            break;
+        case -1:
+            printf("Déjà tiré ici ! Refaites votre choix… ");
+            break;
+        case 0:
+            printf("A l'eau ...");
+            break;
+        case 1:
+            printf("Touché ! ");
+            break;
+        case 2:
+            //wip couler
+            printf("Touché et coulé ! ");
+            break;
     }
-
-
 }
 
 int main() {
@@ -278,11 +330,19 @@ int main() {
     typegrille = 1;   //Il n'y aura plus que des grilles de jeu !
     printf("Tapez une touche pour commencer la partie: ");
     getchar();
+    system("cls");
+    Affgrille2();
 
     //Tirer une case:
-    tirerunecase();
-    tirerunecase();
-    tirerunecase();
+    //boucle pour les tests:
+    for (int i = 0; i < 100; ++i) {
+        tirerunecase();
+        Affgrille2();
+        resultaff();
+    }
+
+    getchar();
+    getchar();
 
     return 0;
 }

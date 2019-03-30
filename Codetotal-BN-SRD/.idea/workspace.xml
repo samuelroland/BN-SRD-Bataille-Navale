@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="Codetotal_BN_SRD" targetName="Codetotal_BN_SRD" />
     </generated>
@@ -39,13 +39,49 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-637766300">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="c" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="c" value="933" />
+          <entry key="txt" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="17" />
+          <entry key="ObjectiveC" value="933" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="630">
+              <caret line="340" column="20" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -57,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -71,6 +107,8 @@
       <find>typegrille</find>
       <find>légendes</find>
       <find>voici</find>
+      <find>apprendre à jouer</find>
+      <find>printdata</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,15 +117,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="803" />
-    <option name="width" value="1124" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="702" />
+    <option name="width" value="1225" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -131,12 +176,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Codetotal_BN_SRD">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Codetotal_BN_SRD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Codetotal_BN_SRD" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -166,32 +220,36 @@
       <workItem from="1553759531695" duration="1935000" />
       <workItem from="1553842975489" duration="168000" />
       <workItem from="1553843313724" duration="5973000" />
+      <workItem from="1553960718204" duration="1904000" />
+      <workItem from="1553962754859" duration="1852000" />
+      <workItem from="1553974641424" duration="944000" />
+      <workItem from="1553976013920" duration="3483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54649000" />
+    <option name="totallyTimeSpent" value="62832000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="702" y="0" width="1225" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47513813" visible="true" weight="0.0292172" />
-      <window_info id="Structure" order="1" sideWeight="0.5248619" side_tool="true" visible="true" weight="0.0292172" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4687842" visible="true" weight="0.0" />
+      <window_info id="Structure" order="1" sideWeight="0.5312158" side_tool="true" visible="true" weight="0.0" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3946002" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39370933" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
-      <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.43613708" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.54764515" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -201,6 +259,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../semicaracterestestcodecarrel/main.c">
       <provider selected="true" editor-type-id="text-editor" />
@@ -208,20 +269,20 @@
     <entry file="file://C:/MinGW/include/wincon.h" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/main.c" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="630">
+          <caret line="340" column="20" selection-start-line="340" selection-start-column="20" selection-end-line="340" selection-end-column="20" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
