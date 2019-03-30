@@ -199,10 +199,11 @@ void Affgrille2() {  //autre manière de faire la fonction.
            "   ■ = Coulé (le bateau est touché en entier)\n");
 }
 
-int result=-2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
+int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
+char hits[4];   //deux cases pour les coups.
 void tirerunecase() {
-    char hits[2];   //deux cases pour les coups.
-    printf("Entrez une case: ");
+
+    printf("\nEntrez une case: ");
     //prendre la case et verifier la valeur:
     do {
         scanf("%c%c", &hits[0], &hits[1]);
@@ -211,12 +212,9 @@ void tirerunecase() {
         }
     } while ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56));
     printf("\nPour %c%c: ", hits[0], hits[1]);
-    hits[0] -= 65;
-    hits[1] -= 49;
-    Affgrille2();
-    //Traitement du tir:
-    //Si il y a de l'eau.
-
+    hits[2] = hits[0] - 65;
+    hits[3] = hits[1] - 49;
+    //Traitement du tir, slt dans le modèle. Affichage du résultat avec resultaff().
     switch (grillejeu[hits[0]][hits[1]]) {
         case -1:
             //déja tiré ici:
@@ -249,7 +247,8 @@ void tirerunecase() {
             break;
     }
 }
-void resultaff(){
+
+void resultaff() {
     switch (result) {
         case -2:
             //Ne rien faire.
