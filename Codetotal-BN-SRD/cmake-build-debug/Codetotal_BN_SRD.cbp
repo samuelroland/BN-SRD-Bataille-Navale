@@ -8,76 +8,78 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
+				<Option working_dir="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Codetotal_BN_SRD">
-				<Option output="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Codetotal_BN_SRD.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
+				<Option output="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Codetotal_BN_SRD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codetotal_BN_SRD"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codetotal_BN_SRD"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Codetotal_BN_SRD/fast">
-				<Option output="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Codetotal_BN_SRD.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
+				<Option output="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Codetotal_BN_SRD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codetotal_BN_SRD/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 Codetotal_BN_SRD/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
+				<Option working_dir="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
+				<Option working_dir="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/main.c">
+		<Unit filename="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/main.c">
 			<Option target="Codetotal_BN_SRD"/>
 		</Unit>
-		<Unit filename="C:/Users/PC_Samuel_01/Documents/GitHub/BN-SRD-Bataille-Navale/Codetotal-BN-SRD/CMakeLists.txt">
+		<Unit filename="C:/Github_Repos/Bataille-Navale/Codetotal-BN-SRD/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

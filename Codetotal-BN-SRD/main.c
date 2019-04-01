@@ -34,14 +34,14 @@ int typegrille;
 int compteurcoups = 0;    //compte le nombre de coups avant de gagner.
 
 int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
-        12, 12, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 13, 0, 0, 0, 0,
-        0, 0, 0, 13, 0, -1, 0, 0,
-        0, 0, 0, 13, 0, 0, 0, 0,
+        22, 22, 0, 0, 0, 0, 11, 0,
+        0, 0, 0, 23, 0, 0, 0, 0,
+        0, 0, 0, 23, 0, -1, 0, 0,
+        0, 0, 0, 23, 0, 0, 0, 0,
         0, -1, 0, 0, 0, 0, -1, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 2, 2
+        0, 0, 0, 0, 0, 0, 22, 2
 };
 
 int grillejeu[8][8] = {     //Grille pour le jeu
@@ -174,13 +174,13 @@ void lignemilieugrille(int Dimensions) {
 
 //Fonction affichage de la grille:
 void Affgrille2() {  //autre manière de faire la fonction.
-    SetConsoleOutputCP(65001); // For accented characters
-    SetConsoleOutputCP(437); // For semi-graphic characters
     if (typegrille == 1) {
         system("cls");
+        SetConsoleOutputCP(65001); // For accented characters
         printf("Bataille Navale – Partie en cours\n\n");
     }
     //premiere ligne de lettre:
+    SetConsoleOutputCP(437); // For semi-graphic characters
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
     lignesuperieurgrille(DIMENSIONSTABLEAU);
     for (int row = 0; row < DIMENSIONSTABLEAU; row++) {
@@ -200,29 +200,30 @@ void Affgrille2() {  //autre manière de faire la fonction.
 }
 
 int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
-char hits[4];   //deux cases pour les coups.
+char hits[2];   //deux cases pour les coups.
 void tirerunecase() {
 
     printf("\nEntrez une case: ");
     //prendre la case et verifier la valeur:
     do {
-        scanf("%c%c", &hits[0], &hits[1]);
+        scanf("%s", &hits);
         if ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56)) {
             printf("Cette valeur ne correspond pas à une case ! Recommencez: ");
         }
     } while ((hits[0] < 65) || (hits[0] > 72) || (hits[1] < 49) || (hits[1] > 56));
-    printf("\nPour %c%c: ", hits[0], hits[1]);
-    hits[2] = hits[0] - 65;
-    hits[3] = hits[1] - 49;
+
+    //transformation pour le tableau de 8*8 de 0 à 7:
+    hits[0] -= 65;
+    hits[1] -= 49;
     //Traitement du tir, slt dans le modèle. Affichage du résultat avec resultaff().
-    switch (grillejeu[hits[0]][hits[1]]) {
+    switch (grillejeu[hits[1]][hits[0]]) {
         case -1:
             //déja tiré ici:
             result = -1;
             break;
         case 0:
             //A l'eau !
-            grillejeu[hits[0]][hits[1]] = -1;
+            grillejeu[hits[1]][hits[0]] = -1;
             compteurcoups++;
             result = 0;
             break;
@@ -231,7 +232,7 @@ void tirerunecase() {
         case 3:
             //Touché !
             result = 1;
-            grillejeu[hits[0]][hits[1]] += 10;
+            grillejeu[hits[1]][hits[0]] += 10;
             compteurcoups++;
             break;
         case 11:
@@ -249,6 +250,7 @@ void tirerunecase() {
 }
 
 void resultaff() {
+    printf("\nPour %c%c: ", hits[0] + 65, hits[1] + 49);
     switch (result) {
         case -2:
             //Ne rien faire.
