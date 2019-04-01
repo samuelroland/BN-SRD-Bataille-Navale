@@ -45,7 +45,7 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
 };
 
 int grillejeu[8][8] = {     //Grille pour le jeu
-        2, 2, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
         0, 0, 0, 3, 0, 0, 0, 0,
@@ -198,8 +198,8 @@ void Affgrille2() {  //autre manière de faire la fonction.
 
 int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
 char hits[2];   //deux cases pour les coups.
+int batotouches[3];    //Cases touchées par bateaux:    0=inutile!
 void tirerunecase() {
-
     printf("\nEntrez une case: ");
     //prendre la case et verifier la valeur:
     do {
@@ -227,10 +227,15 @@ void tirerunecase() {
         case 1:
         case 2:
         case 3:
-            //Touché !
-            result = 1;
+            //Coulé ??
+            //Si la valeur dans le tableau est égal à la valeur dans batotouches correspondant-1:
+            if (batotouches[grillejeu[hits[1]][hits[0]]]==hits[batotouches[grillejeu[hits[1]][hits[0]]]]-1){
+                result=2;
+            } else{ //Touché !
+                result=1;
+            }
+            batotouches[grillejeu[hits[1]][hits[0]]]++;
             grillejeu[hits[1]][hits[0]] += 10;
-
             compteurcoups++;
             break;
         case 11:

@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="232" column="12" selection-start-line="232" selection-start-column="12" selection-end-line="232" selection-end-column="12" />
+            <state relative-caret-position="322">
+              <caret line="270" column="24" lean-forward="true" selection-start-line="270" selection-start-column="24" selection-end-line="270" selection-end-column="24" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -77,6 +77,7 @@
       <find>4</find>
       <find>hits</find>
       <find>set</find>
+      <find>wip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +93,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="680" />
-    <option name="width" value="1247" />
+    <option name="x" value="620" />
+    <option name="width" value="1307" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -191,18 +192,19 @@
       <workItem from="1553962754859" duration="1852000" />
       <workItem from="1553974641424" duration="944000" />
       <workItem from="1553976013920" duration="4280000" />
+      <workItem from="1554128386817" duration="1558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67327000" />
+    <option name="totallyTimeSpent" value="69034000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="680" y="0" width="1247" height="1087" extended-state="0" />
+    <frame x="620" y="0" width="1307" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47274634" visible="true" weight="0.02780118" />
-      <window_info id="Structure" order="1" sideWeight="0.5272537" side_tool="true" visible="true" weight="0.02780118" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4716981" visible="true" weight="0.026463512" />
+      <window_info id="Structure" order="1" sideWeight="0.5283019" side_tool="true" visible="true" weight="0.026463512" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -235,8 +237,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="232" column="12" selection-start-line="232" selection-start-column="12" selection-end-line="232" selection-end-column="12" />
+        <state relative-caret-position="322">
+          <caret line="270" column="24" lean-forward="true" selection-start-line="270" selection-start-column="24" selection-end-line="270" selection-end-column="24" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
