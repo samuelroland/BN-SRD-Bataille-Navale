@@ -148,7 +148,6 @@ void lignedonneegrille(int i, int Dimensions) {
         } else {
             printdatajeu(i, l);
         }
-
         printf(" %c ", DVSB);
         l++;
     }
@@ -158,8 +157,6 @@ void lignedonneegrille(int i, int Dimensions) {
         printdatajeu(i, l);
     }
     printf(" %c\n", DVSB);
-
-
 }
 
 void lignemilieugrille(int Dimensions) {
@@ -233,6 +230,7 @@ void tirerunecase() {
             //Touché !
             result = 1;
             grillejeu[hits[1]][hits[0]] += 10;
+
             compteurcoups++;
             break;
         case 11:
