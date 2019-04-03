@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
     <generated>
       <config projectName="Codetotal_BN_SRD" targetName="Codetotal_BN_SRD" />
     </generated>
@@ -39,13 +39,25 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FUSProjectUsageTrigger">
+    <session id="-637766300">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="270" column="24" lean-forward="true" selection-start-line="270" selection-start-column="24" selection-end-line="270" selection-end-column="24" />
+            <state relative-caret-position="221">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -90,6 +102,12 @@
         <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
@@ -144,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.Build All">
+  <component name="RunManager" selected="Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -156,8 +174,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.Build All" />
-      <item itemvalue="CMake Application.Codetotal_BN_SRD" />
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.Codetotal_BN_SRD" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -193,18 +211,20 @@
       <workItem from="1553974641424" duration="944000" />
       <workItem from="1553976013920" duration="4280000" />
       <workItem from="1554128386817" duration="1558000" />
+      <workItem from="1554229122205" duration="816000" />
+      <workItem from="1554319698199" duration="471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69034000" />
+    <option name="totallyTimeSpent" value="70321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="620" y="0" width="1307" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4716981" visible="true" weight="0.026463512" />
-      <window_info id="Structure" order="1" sideWeight="0.5283019" side_tool="true" visible="true" weight="0.026463512" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47009444" visible="true" weight="0.026463512" />
+      <window_info id="Structure" order="1" sideWeight="0.52990556" side_tool="true" visible="true" weight="0.026463512" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -228,6 +248,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../semicaracterestestcodecarrel/main.c">
       <provider selected="true" editor-type-id="text-editor" />
@@ -237,8 +260,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="270" column="24" lean-forward="true" selection-start-line="270" selection-start-column="24" selection-end-line="270" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
