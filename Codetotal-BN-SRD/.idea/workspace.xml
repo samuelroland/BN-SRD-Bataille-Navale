@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="319" lean-forward="true" selection-start-line="319" selection-end-line="319" />
+            <state relative-caret-position="137">
+              <caret line="199" column="11" lean-forward="true" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -85,6 +85,8 @@
       <find>int typbato</find>
       <find>compteuur</find>
       <find>bato</find>
+      <find>getchar</find>
+      <find>hit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +101,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="58" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
@@ -202,19 +204,19 @@
       <workItem from="1554128386817" duration="1558000" />
       <workItem from="1554229122205" duration="816000" />
       <workItem from="1554319698199" duration="471000" />
-      <workItem from="1554360725154" duration="14482000" />
+      <workItem from="1554360725154" duration="15706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84803000" />
+    <option name="totallyTimeSpent" value="86027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4696017" visible="true" weight="0.016583748" />
-      <window_info id="Structure" order="1" sideWeight="0.5303983" side_tool="true" visible="true" weight="0.016583748" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4689564" visible="true" weight="0.016583748" />
+      <window_info id="Structure" order="1" sideWeight="0.5310436" side_tool="true" visible="true" weight="0.016583748" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -228,7 +230,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.20649895" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.20649895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -254,8 +256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="319" lean-forward="true" selection-start-line="319" selection-end-line="319" />
+        <state relative-caret-position="137">
+          <caret line="199" column="11" lean-forward="true" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>

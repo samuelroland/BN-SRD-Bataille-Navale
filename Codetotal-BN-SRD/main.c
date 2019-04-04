@@ -366,6 +366,7 @@ int main() {
     typegrille = 1;   //Il n'y aura plus que des grilles de jeu !
     printf("Tapez une touche dès que vous êtes prêt à jouer ! ");
     getchar();
+    getchar();
     system("cls");
     Affgrille2();
 
