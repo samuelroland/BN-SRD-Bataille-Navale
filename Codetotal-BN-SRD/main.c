@@ -198,7 +198,9 @@ void Affgrille2() {  //autre manière de faire la fonction.
 
 int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
 char hits[2];   //deux cases pour les coups.
-int batotouches[4]={0, 0, 0, 0};    //Cases touchées par bateaux:    0=inutile! donc 4 cases.
+int batotouches[4] = {0, 0, 0, 0};    //Cases touchées par bateaux:    0=inutile! donc 4 cases.
+int compt_batotouches = 0;  //compteur de bateaux touchés. dès que =3 alors victoire.
+
 void tirerunecase() {
     int typbato;   //type du bateau: 1 ou 2 ou 3 !
 
@@ -232,7 +234,7 @@ void tirerunecase() {
             //de toute facon en tous cas touché:
             typbato = grillejeu[hits[1]][hits[0]];
             grillejeu[hits[1]][hits[0]] += 10;
-            batotouches[grillejeu[hits[1]][hits[0]]-10]++;
+            batotouches[grillejeu[hits[1]][hits[0]] - 10]++;
             compteurcoups++;
             //Coulé ??
             if (typbato == batotouches[typbato]) {
@@ -245,8 +247,9 @@ void tirerunecase() {
                     }
                 }
                 result = 2; //donc touché + coulé
+                compt_batotouches++;
             } else {
-                //Touché !
+                //Si pas touché et coulé, alors slt Touché !
                 result = 1;
             }
             break;
@@ -262,7 +265,6 @@ void tirerunecase() {
         default:
             break;
     }
-
 }
 
 void resultaff() {
@@ -285,6 +287,23 @@ void resultaff() {
             printf("Touché et coulé ! ");
             break;
     }
+}
+
+void affvictoire() {
+    printf("\n"
+           "\n"
+           " /$$    /$$ /$$             /$$               /$$                           /$$\n"
+           "| $$   | $$|__/            | $$              |__/                          | $$\n"
+           "| $$   | $$ /$$  /$$$$$$$ /$$$$$$    /$$$$$$  /$$  /$$$$$$   /$$$$$$       | $$\n"
+           "|  $$ / $$/| $$ /$$_____/|_  $$_/   /$$__  $$| $$ /$$__  $$ /$$__  $$      | $$\n"
+           " \\  $$ $$/ | $$| $$        | $$    | $$  \\ $$| $$| $$  \\__/| $$$$$$$$      |__/\n"
+           "  \\  $$$/  | $$| $$        | $$ /$$| $$  | $$| $$| $$      | $$_____/          \n"
+           "   \\  $/   | $$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$| $$      |  $$$$$$$       /$$\n"
+           "    \\_/    |__/ \\_______/   \\___/   \\______/ |__/|__/       \\_______/      |__/\n"
+           "                                                                               \n"
+           "                                                                               \n"
+           "                                                                               \n"
+           "");
 }
 
 int main() {
@@ -345,21 +364,21 @@ int main() {
 
     //PARTIE JEU:
     typegrille = 1;   //Il n'y aura plus que des grilles de jeu !
-    printf("Tapez une touche pour commencer la partie: ");
+    printf("Tapez une touche dès que vous êtes prêt à jouer ! ");
     getchar();
     system("cls");
     Affgrille2();
 
-    //Tirer une case:
-    //boucle pour les tests:
-    for (int i = 0; i < 100; ++i) {
+    //Jouer une partie complète:
+    while (compt_batotouches != 3) {
         tirerunecase();
         Affgrille2();
         resultaff();
     }
-
-    getchar();
-    getchar();
-
+    affvictoire();
+    //Si choix des grilles:
+    printf("Bravo vous avez gagné en %d coups !  Essayez une autre grille ! Pour cela relancez le programme ! ",
+           compteurcoups);
+    system("pause");
     return 0;
 }
