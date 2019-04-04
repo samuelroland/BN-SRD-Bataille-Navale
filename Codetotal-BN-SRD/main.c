@@ -198,12 +198,10 @@ void Affgrille2() {  //autre manière de faire la fonction.
 
 int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
 char hits[2];   //deux cases pour les coups.
-int batotouches[4];    //Cases touchées par bateaux:    0=inutile! donc 4 cases.
+int batotouches[4]={0, 0, 0, 0};    //Cases touchées par bateaux:    0=inutile! donc 4 cases.
 void tirerunecase() {
-    batotouches[0]=0;
-    batotouches[1]=0;
-    batotouches[2]=0;
-    batotouches[3]=0;
+    int typbato;   //type du bateau: 1 ou 2 ou 3 !
+
     printf("\nEntrez une case: ");
     //prendre la case et verifier la valeur:
     do {
@@ -231,26 +229,26 @@ void tirerunecase() {
         case 1:
         case 2:
         case 3:
+            //de toute facon en tous cas touché:
+            typbato = grillejeu[hits[1]][hits[0]];
+            grillejeu[hits[1]][hits[0]] += 10;
+            batotouches[grillejeu[hits[1]][hits[0]]-10]++;
+            compteurcoups++;
             //Coulé ??
-            //Si la valeur dans le tableau est égal à la valeur dans batotouches correspondant +1 :
-            batotouches[grillejeu[hits[1]][hits[0]]]++;
-            if (grillejeu[hits[1]][hits[0]] == batotouches[grillejeu[hits[1]][hits[0]]]) {
-                result = 2;
-                grillejeu[hits[1]][hits[0]] += 10;    //On le met comme touché.
+            if (typbato == batotouches[typbato]) {
                 //Mise à jour +10, pour tous les cases du bateau, pour arriver à 21, 22, 23:
                 for (int row = 0; row < DIMENSIONSTABLEAU; row++) {
-                    for (int ligne = 0; ligne < DIMENSIONSTABLEAU; ligne++) {
-                        if (grillejeu[row][ligne] == 10 + grillejeu[hits[1]][hits[0]]) {
-                            grillejeu[hits[1]][hits[0]] += 10;
+                    for (int col = 0; col < DIMENSIONSTABLEAU; col++) {
+                        if (grillejeu[row][col] == typbato + 10) {
+                            grillejeu[row][col] += 10;
                         }
                     }
                 }
-            } else { //Touché !
+                result = 2; //donc touché + coulé
+            } else {
+                //Touché !
                 result = 1;
-                grillejeu[hits[1]][hits[0]] += 10;
-                batotouches[grillejeu[hits[1]][hits[0]]]++;
             }
-            compteurcoups++;
             break;
         case 11:
         case 12:
@@ -264,6 +262,7 @@ void tirerunecase() {
         default:
             break;
     }
+
 }
 
 void resultaff() {

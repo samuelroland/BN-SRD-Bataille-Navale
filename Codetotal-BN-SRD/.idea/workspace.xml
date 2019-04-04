@@ -44,20 +44,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="233" selection-start-line="233" selection-end-line="233" />
+            <state relative-caret-position="369">
+              <caret line="246" column="49" selection-start-line="246" selection-start-column="49" selection-end-line="246" selection-end-column="49" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mock:///disassembly">
-          <provider selected="true" editor-type-id="memory-view">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -92,6 +83,7 @@
       <find>for (</find>
       <find>dIMEN</find>
       <find>BATO</find>
+      <find>int typbato</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +136,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,19 +201,19 @@
       <workItem from="1554128386817" duration="1558000" />
       <workItem from="1554229122205" duration="816000" />
       <workItem from="1554319698199" duration="471000" />
-      <workItem from="1554360725154" duration="6278000" />
+      <workItem from="1554360725154" duration="11357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76599000" />
+    <option name="totallyTimeSpent" value="81678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4696017" visible="true" weight="0.018242123" />
-      <window_info id="Structure" order="1" sideWeight="0.5303983" side_tool="true" visible="true" weight="0.018242123" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4689564" visible="true" weight="0.016583748" />
+      <window_info id="Structure" order="1" sideWeight="0.5310436" side_tool="true" visible="true" weight="0.016583748" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -235,7 +227,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.12264151" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.20649895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -244,17 +236,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>206</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../semicaracterestestcodecarrel/main.c">
@@ -272,8 +253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="233" selection-start-line="233" selection-end-line="233" />
+        <state relative-caret-position="369">
+          <caret line="246" column="49" selection-start-line="246" selection-start-column="49" selection-end-line="246" selection-end-column="49" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
