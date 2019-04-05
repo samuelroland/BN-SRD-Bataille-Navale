@@ -380,6 +380,8 @@ int main() {
     //Si choix des grilles:
     printf("Bravo vous avez gagné en %d coups !  Essayez une autre grille ! Pour cela relancez le programme ! ",
            compteurcoups);
-    system("pause");
+    printf("Tapez une touche pour quitter le jeu ... ");
+    getchar();
+    getchar();
     return 0;
 }
