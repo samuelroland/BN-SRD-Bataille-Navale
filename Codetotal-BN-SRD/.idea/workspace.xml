@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="210" column="83" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="83" />
+            <state relative-caret-position="288">
+              <caret line="209" column="27" lean-forward="true" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -102,7 +102,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="58" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
@@ -207,15 +207,15 @@
       <workItem from="1554319698199" duration="471000" />
       <workItem from="1554360725154" duration="15706000" />
       <workItem from="1554444493704" duration="1046000" />
-      <workItem from="1554448163003" duration="290000" />
+      <workItem from="1554448163003" duration="2136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87363000" />
+    <option name="totallyTimeSpent" value="89209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
+    <frame x="58" y="0" width="1869" height="1087" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4663144" visible="true" weight="0.016583748" />
@@ -252,8 +252,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="210" column="83" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="83" />
+        <state relative-caret-position="288">
+          <caret line="209" column="27" lean-forward="true" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
