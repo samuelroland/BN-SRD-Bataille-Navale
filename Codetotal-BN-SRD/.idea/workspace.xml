@@ -102,7 +102,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="58" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
@@ -215,7 +215,7 @@
     <option name="totallyTimeSpent" value="89209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1869" height="1087" extended-state="1" />
+    <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4663144" visible="true" weight="0.016583748" />
