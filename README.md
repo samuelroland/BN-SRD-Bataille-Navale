@@ -14,7 +14,7 @@ Vous aurez besoin de:
 
 Pour générer l'exécutable, vous devez:
 1. Aller sur le Repository BN-SRD-Bataille-Navale sur Github [ici](https://github.com/samuelroland/BN-SRD-Bataille-Navale)
-1. Dans le dossier Codetotal-BN-SRD du Repos: prenez le CMakeLists.txt et le main.c. Placez-les dans un dossier  en local "bataille_navale_test" 
+1. Dans le dossier Codetotal-BN-SRD du Repos: prenez le `CMakeLists.txt` et le main.c. Placez-les dans un dossier  en local "bataille_navale_test" 
 (nommé sans accent ni espace en tous cas). Ouvrez le CMakeLists.txt avec CLion puis ouvrez le main.c avec CLion.
 1. Builder le projet dans CLion.
 
