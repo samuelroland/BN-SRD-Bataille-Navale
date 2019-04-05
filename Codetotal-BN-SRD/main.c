@@ -197,7 +197,7 @@ void Affgrille2() {  //autre manière de faire la fonction.
 }
 
 int result = -2; //-2=pas de résultat, -1=déja tiré ici, 0=a l'eau, 1=touché, 2=touché coulé.
-char hits[2];   //deux cases pour les coups.
+char hits[100];   //deux cases pour les coups.
 int batotouches[4] = {0, 0, 0, 0};    //Cases touchées par bateaux:    0=inutile! donc 4 cases.
 int compt_batotouches = 0;  //compteur de bateaux touchés. dès que =3 alors victoire.
 

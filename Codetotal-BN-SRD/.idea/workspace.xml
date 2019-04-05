@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="382" column="48" selection-start-line="382" selection-start-column="48" selection-end-line="382" selection-end-column="48" />
+            <state relative-caret-position="305">
+              <caret line="210" column="83" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="83" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -87,6 +87,7 @@
       <find>bato</find>
       <find>getchar</find>
       <find>hit</find>
+      <find>recommenc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,19 +206,20 @@
       <workItem from="1554229122205" duration="816000" />
       <workItem from="1554319698199" duration="471000" />
       <workItem from="1554360725154" duration="15706000" />
-      <workItem from="1554444493704" duration="305000" />
+      <workItem from="1554444493704" duration="1046000" />
+      <workItem from="1554448163003" duration="290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86332000" />
+    <option name="totallyTimeSpent" value="87363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46750525" visible="true" weight="0.016583748" />
-      <window_info id="Structure" order="1" sideWeight="0.5324948" side_tool="true" visible="true" weight="0.016583748" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4663144" visible="true" weight="0.016583748" />
+      <window_info id="Structure" order="1" sideWeight="0.5336856" side_tool="true" visible="true" weight="0.016583748" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -250,8 +252,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="382" column="48" selection-start-line="382" selection-start-column="48" selection-end-line="382" selection-end-column="48" />
+        <state relative-caret-position="305">
+          <caret line="210" column="83" selection-start-line="210" selection-start-column="83" selection-end-line="210" selection-end-column="83" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
