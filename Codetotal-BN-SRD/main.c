@@ -190,7 +190,7 @@ void Affgrille2() {  //autre manière de faire la fonction.
 
     //partie légende des symboles:
     SetConsoleOutputCP(65001); // For accented characters
-    printf("   Légendes:\n"
+    printf("   Légende:\n"
            "   X = A l'eau\n"
            "   O = Touché (bateau)\n"
            "   ■ = Coulé (le bateau est touché en entier)\n");
@@ -341,19 +341,21 @@ int main() {
             printf("\n\nVous êtes sur un jeu de bataille navale.\n"
                    "Voici les règles du jeu :\n"
                    "Le but : Couler tous les bateaux adverses placés quelque part en mer (sur le plateau de jeu de 64 cases), avec des explosifs.\n"
-                   "Il y a trois bateaux : de 2, 3, et 4 cases de long par défaut. Les bateaux ne sont pas l’un à côté de l’autre.\n"
-                   "Pour essayer de toucher les bateaux, vous devez entrez la coordonnée de la case où vous voulez lancer un explosif (exemple, A5), puis tapez enter.\n"
+                   "Il y a trois bateaux : de 1, 2, et 3 cases de long. Les bateaux ne touchent pas.\n"
+                   "Pour essayer de toucher les bateaux, vous devez entrez la coordonnée de la case où vous voulez lancer un explosif (exemple: A5), puis tapez enter. Attention à bien rentrer la lettre en premier !\n"
                    "\n"
-                   "Si le programme affiche « A l’eau », vous n’avez pas touché de bateau, une croix s’affiche dans la case. \n"
+                   "Si le programme affiche « A l’eau », vous n’avez pas touché de bateau. Une croix s’affiche dans la case. \n"
                    "\n"
-                   "Si le programme affiche « Touché », c’est que vous avez touché un bateau. La case se remplit d’un carré.\n"
+                   "Si le programme affiche « Touché », c’est que vous avez touché un bateau. La case se remplit d’un cercle.\n"
                    "\n"
-                   "Si le programme affiche « Touché et coulé », ça signifie que le bateau entier à été touché et qu’il est coulé.\n"
-                   "Vous devez ensuite cherchez les autres bateaux.\n"
+                   "Si le programme affiche « Touché et coulé », ça signifie que le bateau entier à été touché et qu’il est donc coulé.\n"
+                   "Toutes les cases s'affichent avec un carré blanc. Vous devez ensuite cherchez les autres bateaux."
+                   "\n\n"
+                   "Vous pouvez vous référer à la légende, pour la signification des symboles."
+                   "\n\n"
+                   "Si vous retirez sur une case que vous avez déjà visée, le programme vous avertira et vous laissera recommencer.\n"
                    "\n"
-                   "Si vous retestez une case que vous avez déjà testée, le programme vous avertira et vous laissera recommencer.\n"
-                   "\n"
-                   "Une fois que vous avez touché les 3 bateaux, un message s’affiche vous annonçant que vous avez gagné.");
+                   "Une fois que vous avez touché les 3 bateaux, la partie s'arrête et un message s’affiche vous annonçant que vous avez gagné.");
             break;
         default:
             printf("\nEh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même…");
