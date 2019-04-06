@@ -233,8 +233,8 @@ void tirerunecase() {
         case 3:
             //de toute facon en tous cas touché:
             typbato = grillejeu[hits[1]][hits[0]];
-            batotouches[grillejeu[hits[1]][hits[0]]]++;
-            grillejeu[hits[1]][hits[0]] += 10;            
+            grillejeu[hits[1]][hits[0]] += 10;
+            batotouches[grillejeu[hits[1]][hits[0]] - 10]++;
             compteurcoups++;
             //Coulé ??
             if (typbato == batotouches[typbato]) {

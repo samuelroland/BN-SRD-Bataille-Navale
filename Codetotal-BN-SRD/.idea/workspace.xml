@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="871">
-              <caret line="388" column="1" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="1" />
+            <state relative-caret-position="548">
+              <caret line="369" column="14" lean-forward="true" selection-start-line="369" selection-start-column="14" selection-end-line="369" selection-end-column="14" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -123,8 +123,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="25" />
+    <option name="y" value="37" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
   </component>
@@ -176,7 +177,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -229,19 +230,19 @@
       <workItem from="1554360725154" duration="15706000" />
       <workItem from="1554444493704" duration="1046000" />
       <workItem from="1554448163003" duration="2136000" />
-      <workItem from="1554575730433" duration="35000" />
+      <workItem from="1554575730433" duration="380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89244000" />
+    <option name="totallyTimeSpent" value="89589000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
+    <frame x="25" y="37" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46484786" visible="true" weight="0.016583748" />
-      <window_info id="Structure" order="1" sideWeight="0.53515214" side_tool="true" visible="true" weight="0.016583748" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4649934" visible="true" weight="0.016583748" />
+      <window_info id="Structure" order="1" sideWeight="0.5350066" side_tool="true" visible="true" weight="0.016583748" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -255,7 +256,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.20649895" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.20566632" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,8 +278,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="388" column="1" selection-start-line="388" selection-start-column="1" selection-end-line="388" selection-end-column="1" />
+        <state relative-caret-position="548">
+          <caret line="369" column="14" lean-forward="true" selection-start-line="369" selection-start-column="14" selection-end-line="369" selection-end-column="14" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
           </folding>
