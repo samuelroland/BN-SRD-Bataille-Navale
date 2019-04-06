@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="199" column="11" lean-forward="true" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
+            <state relative-caret-position="288">
+              <caret line="209" column="27" lean-forward="true" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
               </folding>
@@ -87,6 +87,7 @@
       <find>bato</find>
       <find>getchar</find>
       <find>hit</find>
+      <find>recommenc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,7 +102,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="58" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
@@ -205,18 +206,20 @@
       <workItem from="1554229122205" duration="816000" />
       <workItem from="1554319698199" duration="471000" />
       <workItem from="1554360725154" duration="15706000" />
+      <workItem from="1554444493704" duration="1046000" />
+      <workItem from="1554448163003" duration="2136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86027000" />
+    <option name="totallyTimeSpent" value="89209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="0" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4689564" visible="true" weight="0.016583748" />
-      <window_info id="Structure" order="1" sideWeight="0.5310436" side_tool="true" visible="true" weight="0.016583748" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4663144" visible="true" weight="0.016583748" />
+      <window_info id="Structure" order="1" sideWeight="0.5336856" side_tool="true" visible="true" weight="0.016583748" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -247,20 +250,20 @@
     <entry file="file://C:/MinGW/include/wincon.h" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/main.c" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="209" column="27" lean-forward="true" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
+          <folding>
+            <element signature="e#195#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="199" column="11" lean-forward="true" selection-start-line="199" selection-start-column="11" selection-end-line="199" selection-end-column="11" />
-          <folding>
-            <element signature="e#195#213#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
