@@ -383,8 +383,6 @@ int main() {
                    "\n"
                    "Une fois que vous avez touché les 3 bateaux, la partie s'arrête et un message s’affiche vous annonçant que vous avez gagné.");
             break;
-        default:
-            printf("\nEh, il faut écrire 0 ou 1 !!! On vous demande pas la lune quand même…");
     }
     printf("\nTapez une touche pour quitter l’aide …");
     getchar();
@@ -415,7 +413,7 @@ int main() {
                 }
             } while ((choixgrille[0] != '1') && (choixgrille[0] != '2') && (choixgrille[0] != '3'));
             chargergrillefichier();
-            printf("Grille %c bien choisie...", choixgrille[0]);
+            printf("\nGrille %c bien choisie...", choixgrille[0]);
             break;
     }
 

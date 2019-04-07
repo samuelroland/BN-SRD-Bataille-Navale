@@ -1,4 +1,4 @@
 ToolSet: 5.2 (local)@C:\MinGW
 Options: 
 
-Options:
+Options:-DCMAKE_CXX_COMPILER=C:/MinGW/bin/c++filt.exe

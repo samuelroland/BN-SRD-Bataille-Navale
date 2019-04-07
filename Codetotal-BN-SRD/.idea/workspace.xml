@@ -44,31 +44,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="350" column="32" lean-forward="true" selection-start-line="350" selection-start-column="32" selection-end-line="350" selection-end-column="32" />
+            <state relative-caret-position="603">
+              <caret line="419" lean-forward="true" selection-start-line="419" selection-end-line="419" />
               <folding>
-                <element signature="e#195#213#0" expanded="true" />
-                <element signature="e#1781#2395#0" />
-                <element signature="e#2397#3004#0" />
-                <element signature="e#3006#3102#0" />
-                <element signature="e#3104#3372#0" />
-                <element signature="e#3374#3619#0" />
-                <element signature="e#3621#4195#0" />
-                <element signature="e#4197#4437#0" />
-                <element signature="e#4439#5429#0" />
-                <element signature="e#5755#7902#0" />
-                <element signature="e#7904#8412#0" />
-                <element signature="e#8414#9539#0" />
+                <element signature="e#273#291#0" expanded="true" />
+                <element signature="e#2797#3411#0" />
+                <element signature="e#3413#4020#0" />
+                <element signature="e#4022#4118#0" />
+                <element signature="e#4120#4388#0" />
+                <element signature="e#4390#4635#0" />
+                <element signature="e#4637#5211#0" />
+                <element signature="e#5213#5453#0" />
+                <element signature="e#5455#6446#0" />
+                <element signature="e#6772#8919#0" />
+                <element signature="e#8921#9429#0" />
+                <element signature="e#9431#10556#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -77,6 +68,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>légendes</find>
+      <find>voici</find>
       <find>apprendre à jouer</find>
       <find>printdata</find>
       <find>entrez un</find>
@@ -104,9 +97,7 @@
       <find>printdataex</find>
       <find>partie en cours</find>
       <find>charger</find>
-      <find>typechoi</find>
-      <find>choixgrille</find>
-      <find>switch</find>
+      <find>grille</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,10 +111,16 @@
       </list>
     </option>
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-30" />
+    <option name="x" value="14" />
+    <option name="y" value="-15" />
     <option name="width" value="1869" />
     <option name="height" value="1087" />
   </component>
@@ -133,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,16 +138,10 @@
               <item name="Codetotal_BN_SRD" type="b2602c69:ProjectViewProjectNode" />
               <item name="Codetotal-BN-SRD" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Codetotal_BN_SRD" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codetotal-BN-SRD" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +152,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,21 +166,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
+  <component name="RunManager">
+    <configuration name="Codetotal_BN_SRD" type="CMakeRunConfiguration" factoryName="Application" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Codetotal_BN_SRD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Codetotal_BN_SRD" TARGET_NAME="Codetotal_BN_SRD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Codetotal_BN_SRD" RUN_TARGET_NAME="Codetotal_BN_SRD">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Build All" />
-      <item itemvalue="CMake Application.Codetotal_BN_SRD" />
-    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake Application.Codetotal_BN_SRD" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -229,23 +217,29 @@
       <workItem from="1554444493704" duration="1046000" />
       <workItem from="1554448163003" duration="2136000" />
       <workItem from="1554575730433" duration="2512000" />
-      <workItem from="1554626412264" duration="16776000" />
+      <workItem from="1554626412264" duration="13680000" />
+      <workItem from="1554649255222" duration="155000" />
+      <workItem from="1554649441775" duration="988000" />
+      <workItem from="1554651789309" duration="72000" />
+      <workItem from="1554651875283" duration="671000" />
+      <workItem from="1554652568585" duration="382000" />
+      <workItem from="1554652959837" duration="934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111149000" />
+    <option name="totallyTimeSpent" value="111269000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="17" y="32" width="1869" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4626219" visible="true" weight="0.12153518" />
-      <window_info id="Structure" order="1" sideWeight="0.53737813" side_tool="true" visible="true" weight="0.12153518" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45702305" visible="true" weight="0.12714207" />
+      <window_info id="Structure" order="1" sideWeight="0.5429769" side_tool="true" visible="true" weight="0.12714207" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6543879" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6540881" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39653304" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,7 +248,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3391116" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.13542795" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -266,15 +260,6 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>392</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="r" />
@@ -288,31 +273,43 @@
     <entry file="file://C:/MinGW/include/wincon.h" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/main.c" />
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="350" column="32" lean-forward="true" selection-start-line="350" selection-start-column="32" selection-end-line="350" selection-end-column="32" />
-          <folding>
-            <element signature="e#195#213#0" expanded="true" />
-            <element signature="e#1781#2395#0" />
-            <element signature="e#2397#3004#0" />
-            <element signature="e#3006#3102#0" />
-            <element signature="e#3104#3372#0" />
-            <element signature="e#3374#3619#0" />
-            <element signature="e#3621#4195#0" />
-            <element signature="e#4197#4437#0" />
-            <element signature="e#4439#5429#0" />
-            <element signature="e#5755#7902#0" />
-            <element signature="e#7904#8412#0" />
-            <element signature="e#8414#9539#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Codetotal_BN_SRD.cbp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="419" lean-forward="true" selection-start-line="419" selection-end-line="419" />
+          <folding>
+            <element signature="e#273#291#0" expanded="true" />
+            <element signature="e#2797#3411#0" />
+            <element signature="e#3413#4020#0" />
+            <element signature="e#4022#4118#0" />
+            <element signature="e#4120#4388#0" />
+            <element signature="e#4390#4635#0" />
+            <element signature="e#4637#5211#0" />
+            <element signature="e#5213#5453#0" />
+            <element signature="e#5455#6446#0" />
+            <element signature="e#6772#8919#0" />
+            <element signature="e#8921#9429#0" />
+            <element signature="e#9431#10556#0" />
+          </folding>
         </state>
       </provider>
     </entry>
