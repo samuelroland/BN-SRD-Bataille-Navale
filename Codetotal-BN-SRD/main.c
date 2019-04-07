@@ -1,8 +1,8 @@
 /*
  * Projet: Bataille Navale. Module MA-20. Repos Github: https://github.com/samuelroland/BN-SRD-Bataille-Navale
  * Auteur: Samuel Roland
- * Date début du code: 7.03.2019
- * Date fin du code: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ * Date début du code: 07.03.2019
+ * Date fin du code: 07.04.2019
  */
 
 #include <stdio.h>
@@ -12,7 +12,6 @@
 
 #define DIMENSIONSTABLEAU 8 //dimensions du tableaux: 8*8 cases.
 
-//TOUS LES SYMBOLES SPéCIAUX:
 //TABLEAU DOUBLE-BANDE:
 #define DTLC 201 // ╔, Double Top Left Corner
 #define DTRC 187 // ╗, Double Top Right Corner
@@ -30,10 +29,10 @@
 #define cazblanc 254    //caractère case blanche. ■
 
 //Variables globales:
-int typegrille;
+int typegrille; //Grille d'exemple ou de jeu.
 int compteurcoups = 0;    //compte le nombre de coups avant de gagner.
 
-int grilleexemple[8][8] = {     //Grille définie slt pour l'aide. pas dans un fichier externe car 22 = deux caractères.
+int grilleexemple[DIMENSIONSTABLEAU][DIMENSIONSTABLEAU] = {     //Grille définie slt pour l'aide. pas dans un fichier externe car 22 = deux caractères.
         22, 22, 0, 0, 0, 0, 11, 0,
         0, 0, 0, 23, 0, 0, 0, 0,
         0, 0, 0, 23, 0, -1, 0, 0,
@@ -44,7 +43,7 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide. pas dans un f
         0, 0, 0, 0, 0, 0, 22, 2
 };
 
-int grillejeu[8][8];    //La grille qui est utilisée pour jouer. Elle se charge sur un fichier externe.
+int grillejeu[DIMENSIONSTABLEAU][DIMENSIONSTABLEAU];    //La grille qui est utilisée pour jouer. Elle se charge sur un fichier externe.
 char choixgrille[10];    //choix de la grille: par défaut, 1, 2 ou 3.
 
 void
@@ -65,7 +64,6 @@ chargergrillefichier() {   //Fonction pour charger la grille depuis un fichier. 
             file = fopen("Grilles\\Grillejeu3.txt", "r");
             break;
     }
-
 
     //Charger uniquement les caractères qui sont des numéros:
     for (int i = 0; i < DIMENSIONSTABLEAU; ++i) {
@@ -132,7 +130,7 @@ void printdatajeu(int i, int l) {  //i= numero de la ligne. l= numero de la case
     }
 }
 
-//Sous-fonctions pour la grille:
+//Fait simplement trois traits double horizontaux:
 void traits3horiz() {
     printf("%c%c%c", DHSB, DHSB, DHSB);
 }
@@ -171,7 +169,7 @@ void lignedonneegrille(int i, int Dimensions) {
             printdatajeu(i, l);
         }
         printf(" %c ", DVSB);
-        l++;
+        l++;    //Colonne suivante.
     }
     if (typegrille == 0) {
         printdataex(i, l);
@@ -192,16 +190,15 @@ void lignemilieugrille(int Dimensions) {
 }
 
 //Fonction affichage de la grille:
-void Affgrille2() {  //autre manière de faire la fonction.
+void Affgrille2() {
     if (typegrille == 1) {
         system("cls");
         SetConsoleOutputCP(65001); // For accented characters
         printf("Bataille Navale – Partie en cours\n\n");
     }
-
-    //premiere ligne de lettre:
+    //Ensemble des types de lignes:
     SetConsoleOutputCP(437); // For semi-graphic characters
-    printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
+    printf("     A   B   C   D   E   F   G   H\n"); //premiere ligne de lettre écrite en dur
     lignesuperieurgrille(DIMENSIONSTABLEAU);
     for (int row = 0; row < DIMENSIONSTABLEAU; row++) {
         if (row > 0) {
@@ -211,7 +208,7 @@ void Affgrille2() {  //autre manière de faire la fonction.
     }
     ligneinferieurgrille(DIMENSIONSTABLEAU);
 
-    //partie légende des symboles:
+    // légende des symboles:
     SetConsoleOutputCP(65001); // For accented characters
     printf("   Légende:\n"
            "   X = A l'eau\n"
@@ -239,7 +236,7 @@ void tirerunecase() {
     //transformation pour le tableau de 8*8 de 0 à 7:
     hits[0] -= 65;
     hits[1] -= 49;
-    //Traitement du tir, slt dans le modèle. Affichage du résultat avec resultaff().
+    //Traitement du tir, slt dans le modèle. Affichage du résultat avec resultaff() apres cls et affichage de la grille.
     switch (grillejeu[hits[1]][hits[0]]) {
         case -1:
             //déja tiré ici:
@@ -256,8 +253,8 @@ void tirerunecase() {
         case 3:
             //de toute facon en tous cas touché:
             typbato = grillejeu[hits[1]][hits[0]];
+            batotouches[grillejeu[hits[1]][hits[0]]]++;
             grillejeu[hits[1]][hits[0]] += 10;
-            batotouches[grillejeu[hits[1]][hits[0]] - 10]++;
             compteurcoups++;
             //Coulé ??
             if (typbato == batotouches[typbato]) {
@@ -284,8 +281,6 @@ void tirerunecase() {
         case 23:
             //déja tiré ici:
             result = -1;
-            break;
-        default:
             break;
     }
 }
@@ -331,14 +326,9 @@ void affvictoire() {
 
 
 int main() {
-    SetConsoleOutputCP(65001); // For accented characters
-    SetConsoleOutputCP(437); // For semi-graphic characters
-
     //Espaces declarations de variables:
     char choixhelp[10];  //choix d'afficher l'aide ou pas, avec 0 ou 1.
     char typechoixgrille[10];    //type de choix pour la grille
-
-
 
     SetConsoleOutputCP(65001); // For accented characters
     printf("Jeu de la bataille Navale.\n"
@@ -400,12 +390,12 @@ int main() {
         }
     } while ((typechoixgrille[0] != '0') && (typechoixgrille[0] != '1'));
     switch (typechoixgrille[0]) {
-        case '1':
+        case '1':   //Grille fixe par défaut.
             choixgrille[0] = '0';   //grille par défaut.
             chargergrillefichier();
             printf("L’ordinateur a appliqué la grille fixe prédéfinie. Vous pouvez maintenant jouer.");
             break;
-        case '0':
+        case '0':   //choisir parmi 3 grilles.
             printf("\nChoisissez une des 3 grilles de bateaux. Tapez 1, 2 ou 3. ");
             do {
                 scanf("%s", &choixgrille);
@@ -418,8 +408,7 @@ int main() {
             break;
     }
 
-
-    //PARTIE JEU:
+    // Jouer une partie complète:
     typegrille = 1;   //Il n'y aura plus que des grilles de jeu ! Ce n'est plus la grille d'exemple.
     printf("\nTapez une touche dès que vous êtes prêt à jouer ! ");
     getchar();
@@ -427,14 +416,14 @@ int main() {
     system("cls");
     Affgrille2();
 
-    //Jouer une partie complète:
     while (compt_batotouches != 3) {
         tirerunecase();
         Affgrille2();
         resultaff();
     }
+    //VICTOIRE ! texte en ASCII ART.
     affvictoire();
-    //Si choix des grilles:
+    //Texte de victoire + nombre de coups.
     printf("Bravo vous avez gagné en %d coups !  Essayez une autre grille ! Pour cela relancez le programme ! ",
            compteurcoups);
     printf("Tapez une touche pour quitter le jeu ... ");
