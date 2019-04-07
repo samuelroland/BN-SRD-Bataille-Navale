@@ -47,7 +47,8 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide. pas dans un f
 int grillejeu[8][8];    //La grille qui est utilisée pour jouer. Elle se charge sur un fichier externe.
 char choixgrille[10];    //choix de la grille: par défaut, 1, 2 ou 3.
 
-void chargergrillefichier() {   //Fonction pour charger la grille depuis un fichier. Le fichier est choisi selon grilleacharger.
+void
+chargergrillefichier() {   //Fonction pour charger la grille depuis un fichier. Le fichier est choisi selon grilleacharger.
     char c;
     FILE *file = NULL;
     switch (choixgrille[0]) {
@@ -400,7 +401,7 @@ int main() {
     } while ((typechoixgrille[0] != '0') && (typechoixgrille[0] != '1'));
     switch (typechoixgrille[0]) {
         case '1':
-            choixgrille[0] = 0;   //grille par défaut.
+            choixgrille[0] = '0';   //grille par défaut.
             chargergrillefichier();
             printf("L’ordinateur a appliqué la grille fixe prédéfinie. Vous pouvez maintenant jouer.");
             break;
