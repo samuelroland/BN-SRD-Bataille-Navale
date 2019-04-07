@@ -44,17 +44,38 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
         0, 0, 0, 0, 0, 0, 22, 2
 };
 
-int grillejeu[8][8] = {     //Grille pour le jeu
-        0, 0, 0, 0, 0, 0, 1, 0,
-        0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 3, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 2, 2
-};
+int grillejeu[8][8];
 
+int grilleacharger; //définit quel grille on doit charger.
+void chargergrillefichier() {   //Fonction pour charger la grille depuis un fichier. Le fichier est choisi selon grilleacharger.
+    char c;
+    FILE *file = NULL;
+    switch (grilleacharger) {
+        case 0: //Grille pour l'exemple.
+            file = fopen("Grilles\\Grillepardefaut.txt", "r");
+            break;
+        case 1:
+            file = fopen("Grilles\\Grillejeu1.txt", "r");
+            break;
+        case 2:
+            file = fopen("Grilles\\Grillejeu2.txt", "r");
+            break;
+        case 3:
+            file = fopen("Grilles\\Grillejeu3.txt", "r");
+            break;
+    }
+
+
+    //Pour ne pas prendre en compte les caractères autres que les nombres:
+    for (int i = 0; i < DIMENSIONSTABLEAU; ++i) {
+        for (int j = 0; j < DIMENSIONSTABLEAU; ++j) {
+            do {
+                c = fgetc(file);
+                grillejeu[i][j] = c - '0';
+            } while (c <= 47);  //Tant qu'il est au dessous de 47, donc qu'il n'est pas un nombre.
+        }
+    }
+}
 
 void printdataex(int i, int l) {  //i= numero de la ligne. l= numero de la case (en partant de 1 !).
     //SLT pou la grilleexemple !
@@ -176,6 +197,7 @@ void Affgrille2() {  //autre manière de faire la fonction.
         SetConsoleOutputCP(65001); // For accented characters
         printf("Bataille Navale – Partie en cours\n\n");
     }
+
     //premiere ligne de lettre:
     SetConsoleOutputCP(437); // For semi-graphic characters
     printf("     A   B   C   D   E   F   G   H\n"); //écrite en dur, 5 espaces avant.
@@ -312,6 +334,9 @@ int main() {
 
     //Espaces declarations de variables:
     char choixhelp[5];  //choix d'afficher l'aide ou pas, avec 0 ou 1.
+    int typechoixgrille;    //type de choix pour la grille
+    int choixgrille;    //choix de la grille
+
 
     SetConsoleOutputCP(65001); // For accented characters
     printf("Jeu de la bataille Navale.\n"
@@ -364,9 +389,41 @@ int main() {
     getchar();
     getchar();
 
+    //PLACEMENT DES BATEAUX:
+    system("cls");
+    printf("Bataille Navale – Placement des bateaux\n");
+    printf("\nVoulez-vous jouer avec la grille fixe par défaut ? (tapez 1 pour oui ou 0 pour non). Si non vous pouvez choisir entre 3 grilles.");
+    do {
+        scanf("%d", &typechoixgrille);
+        if ((typechoixgrille != 0) && (typechoixgrille != 1)){
+            printf("Invalide. Retentez : ");
+        }
+    } while ((typechoixgrille != 0) && (typechoixgrille != 1));
+    switch (typechoixgrille) {
+        case 1:
+            grilleacharger=0;   //grille par défaut.
+            chargergrillefichier();
+            printf("L’ordinateur a appliqué la grille fixe prédéfinie. Vous pouvez maintenant jouer.");
+            break;
+        case 0:
+            printf("\nChoisissez une des 3 grilles de bateaux. Tapez 1, 2 ou 3. ");
+            do {
+                scanf("%s", &choixgrille);
+                if ((choixgrille != 1) && (choixgrille != 2) && (choixgrille != 3)){
+                    printf("Valeur invalide ! Entrez une valeur entre 1 et 3. ");
+                }
+            } while ((choixgrille != 1) && (choixgrille != 2) && (choixgrille != 3));
+            grilleacharger=choixgrille; //pour charger le fichier avec la bonne grille.
+            chargergrillefichier();
+            printf("Grille %d bien choisie...", choixgrille);
+
+            break;
+    }
+
+
     //PARTIE JEU:
-    typegrille = 1;   //Il n'y aura plus que des grilles de jeu !
-    printf("Tapez une touche dès que vous êtes prêt à jouer ! ");
+    typegrille = 1;   //Il n'y aura plus que des grilles de jeu ! Ce n'est plus la grille d'exemple.
+    printf("\nTapez une touche dès que vous êtes prêt à jouer ! ");
     getchar();
     getchar();
     system("cls");
