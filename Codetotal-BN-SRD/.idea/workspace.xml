@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="350" column="32" lean-forward="true" selection-start-line="350" selection-start-column="32" selection-end-line="350" selection-end-column="32" />
+            <state relative-caret-position="512">
+              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
               <folding>
                 <element signature="e#195#213#0" expanded="true" />
                 <element signature="e#1781#2395#0" />
@@ -77,6 +77,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>grilletest</find>
+      <find>légendes</find>
+      <find>voici</find>
       <find>apprendre à jouer</find>
       <find>printdata</find>
       <find>entrez un</find>
@@ -104,9 +107,6 @@
       <find>printdataex</find>
       <find>partie en cours</find>
       <find>charger</find>
-      <find>typechoi</find>
-      <find>choixgrille</find>
-      <find>switch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,19 +229,19 @@
       <workItem from="1554444493704" duration="1046000" />
       <workItem from="1554448163003" duration="2136000" />
       <workItem from="1554575730433" duration="2512000" />
-      <workItem from="1554626412264" duration="16776000" />
+      <workItem from="1554626412264" duration="13680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111149000" />
+    <option name="totallyTimeSpent" value="108053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4626219" visible="true" weight="0.12153518" />
-      <window_info id="Structure" order="1" sideWeight="0.53737813" side_tool="true" visible="true" weight="0.12153518" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.462406" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="1" sideWeight="0.53759396" side_tool="true" visible="true" weight="0.12153518" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
@@ -255,7 +255,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32874617" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3394794" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.13542795" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.13542795" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -266,15 +266,6 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>392</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="r" />
@@ -290,8 +281,8 @@
     <entry file="file://C:/CLionProjects/untitled_testsymboles/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="350" column="32" lean-forward="true" selection-start-line="350" selection-start-column="32" selection-end-line="350" selection-end-column="32" />
+        <state relative-caret-position="512">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding>
             <element signature="e#195#213#0" expanded="true" />
             <element signature="e#1781#2395#0" />
