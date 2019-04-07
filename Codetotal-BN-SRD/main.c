@@ -1,6 +1,6 @@
 /*
- * Projet Bataille Navale. Module MA-20.
- * Samuel Roland
+ * Projet: Bataille Navale. Module MA-20. Repos Github: https://github.com/samuelroland/BN-SRD-Bataille-Navale
+ * Auteur: Samuel Roland
  * Date début du code: 7.03.2019
  * Date fin du code: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  */
@@ -33,7 +33,7 @@
 int typegrille;
 int compteurcoups = 0;    //compte le nombre de coups avant de gagner.
 
-int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
+int grilleexemple[8][8] = {     //Grille définie slt pour l'aide. pas dans un fichier externe car 22 = deux caractères.
         22, 22, 0, 0, 0, 0, 11, 0,
         0, 0, 0, 23, 0, 0, 0, 0,
         0, 0, 0, 23, 0, -1, 0, 0,
@@ -44,34 +44,34 @@ int grilleexemple[8][8] = {     //Grille définie slt pour l'aide.
         0, 0, 0, 0, 0, 0, 22, 2
 };
 
-int grillejeu[8][8];
+int grillejeu[8][8];    //La grille qui est utilisée pour jouer. Elle se charge sur un fichier externe.
+char choixgrille[10];    //choix de la grille: par défaut, 1, 2 ou 3.
 
-int grilleacharger; //définit quel grille on doit charger.
 void chargergrillefichier() {   //Fonction pour charger la grille depuis un fichier. Le fichier est choisi selon grilleacharger.
     char c;
     FILE *file = NULL;
-    switch (grilleacharger) {
-        case 0: //Grille pour l'exemple.
+    switch (choixgrille[0]) {
+        case '0': //Grille pour l'exemple.
             file = fopen("Grilles\\Grillepardefaut.txt", "r");
             break;
-        case 1:
+        case '1':
             file = fopen("Grilles\\Grillejeu1.txt", "r");
             break;
-        case 2:
+        case '2':
             file = fopen("Grilles\\Grillejeu2.txt", "r");
             break;
-        case 3:
+        case '3':
             file = fopen("Grilles\\Grillejeu3.txt", "r");
             break;
     }
 
 
-    //Pour ne pas prendre en compte les caractères autres que les nombres:
+    //Charger uniquement les caractères qui sont des numéros:
     for (int i = 0; i < DIMENSIONSTABLEAU; ++i) {
         for (int j = 0; j < DIMENSIONSTABLEAU; ++j) {
             do {
                 c = fgetc(file);
-                grillejeu[i][j] = c - '0';
+                grillejeu[i][j] = c - '0';  //mettre à son numero ASCII
             } while (c <= 47);  //Tant qu'il est au dessous de 47, donc qu'il n'est pas un nombre.
         }
     }
@@ -328,14 +328,15 @@ void affvictoire() {
            "");
 }
 
+
 int main() {
     SetConsoleOutputCP(65001); // For accented characters
     SetConsoleOutputCP(437); // For semi-graphic characters
 
     //Espaces declarations de variables:
-    char choixhelp[5];  //choix d'afficher l'aide ou pas, avec 0 ou 1.
-    int typechoixgrille;    //type de choix pour la grille
-    int choixgrille;    //choix de la grille
+    char choixhelp[10];  //choix d'afficher l'aide ou pas, avec 0 ou 1.
+    char typechoixgrille[10];    //type de choix pour la grille
+
 
 
     SetConsoleOutputCP(65001); // For accented characters
@@ -394,29 +395,27 @@ int main() {
     printf("Bataille Navale – Placement des bateaux\n");
     printf("\nVoulez-vous jouer avec la grille fixe par défaut ? (tapez 1 pour oui ou 0 pour non). Si non vous pouvez choisir entre 3 grilles.");
     do {
-        scanf("%d", &typechoixgrille);
-        if ((typechoixgrille != 0) && (typechoixgrille != 1)){
+        scanf("%s", &typechoixgrille);
+        if ((typechoixgrille[0] != '0') && (typechoixgrille[0] != '1')) {
             printf("Invalide. Retentez : ");
         }
-    } while ((typechoixgrille != 0) && (typechoixgrille != 1));
-    switch (typechoixgrille) {
-        case 1:
-            grilleacharger=0;   //grille par défaut.
+    } while ((typechoixgrille[0] != '0') && (typechoixgrille[0] != '1'));
+    switch (typechoixgrille[0]) {
+        case '1':
+            choixgrille[0] = 0;   //grille par défaut.
             chargergrillefichier();
             printf("L’ordinateur a appliqué la grille fixe prédéfinie. Vous pouvez maintenant jouer.");
             break;
-        case 0:
+        case '0':
             printf("\nChoisissez une des 3 grilles de bateaux. Tapez 1, 2 ou 3. ");
             do {
                 scanf("%s", &choixgrille);
-                if ((choixgrille != 1) && (choixgrille != 2) && (choixgrille != 3)){
+                if ((choixgrille[0] != '1') && (choixgrille[0] != '2') && (choixgrille[0] != '3')) {
                     printf("Valeur invalide ! Entrez une valeur entre 1 et 3. ");
                 }
-            } while ((choixgrille != 1) && (choixgrille != 2) && (choixgrille != 3));
-            grilleacharger=choixgrille; //pour charger le fichier avec la bonne grille.
+            } while ((choixgrille[0] != '1') && (choixgrille[0] != '2') && (choixgrille[0] != '3'));
             chargergrillefichier();
-            printf("Grille %d bien choisie...", choixgrille);
-
+            printf("Grille %c bien choisie...", choixgrille[0]);
             break;
     }
 
